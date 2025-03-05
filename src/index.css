@@ -256,6 +256,13 @@ body {
   left: 10%;
 }
 
+.food-item:nth-child(7){
+  top:40%;
+  left: 40%;
+  
+
+}
+
 .poke-description {
   position: absolute;
   bottom: -60px;
