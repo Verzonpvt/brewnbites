@@ -10,6 +10,12 @@ function Gallery() {
     <>
     <div className="gallery-page">
       <Navbar />
+      <section className="gallery-hero">
+        <div className="container">
+          <h1>Gallery</h1>
+        </div>
+      </section>
+
       <br />
       <br />
       <div className="gallery-grid">

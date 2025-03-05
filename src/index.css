@@ -7,8 +7,8 @@
   --text-color: #ffffff;
   --dark-bg: #000000;
   --section-bg: #111111;
-  --footer-bg: #ffffff;
-  --footer-text: #000000;
+  --footer-bg: #1c1c1c;
+  --footer-text: #ffffff;
 }
 
 * {
@@ -1144,7 +1144,7 @@ body {
 .about-hero {
   position: relative;
   height: 500px;
-  background-image: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background-image: url('https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741177433534-vecteezy_ai-generated-grill-burger-pizza-salad-lettuce-on-wooden_36801692.jpg');
   background-size: cover;
   background-position: center;
   display: flex;

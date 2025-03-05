@@ -30,7 +30,7 @@ function About() {
               </div>
               <div className="about-story-image">
                 <div className="accent"></div>
-                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Poke Bowl" />
+                <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741166212784-abouthome.jpg" alt="Poke Bowl" />
                 <div className="accent"></div>
               </div>
             </div>
@@ -38,7 +38,7 @@ function About() {
             <div className="about-story-section">
               <div className="about-story-image">
                 <div className="accent"></div>
-                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Restaurant Interior" />
+                <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741177036843-close-up-delicious-burger-meal.jpg" alt="Restaurant Interior" />
                 <div className="accent"></div>
               </div>
               <div className="about-story-text">
@@ -58,7 +58,7 @@ function About() {
               </div>
               <div className="about-story-image">
                 <div className="accent"></div>
-                <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Restaurant Atmosphere" />
+                <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741177433534-vecteezy_ai-generated-grill-burger-pizza-salad-lettuce-on-wooden_36801692.jpg" alt="Restaurant Atmosphere" />
                 <div className="accent"></div>
               </div>
             </div>
