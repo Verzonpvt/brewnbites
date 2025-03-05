@@ -1001,7 +1001,6 @@ body {
 /* Gallery Page Styles */
 .gallery-page {
   min-height: 100vh;
-  margin-inline: 10%;
   display: flex;
   flex-direction: column;
 }
