@@ -85,7 +85,7 @@ function App() {
               </div>
             </div>
             <div className="explore-item">
-              <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Coffee" />
+              <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741176237007-pexels-photo-312418.webp" alt="Coffee" />
               <div className="explore-item-content">
                 <h3>Coffee</h3>
                 <p>Premium coffee blends, expertly brewed to perfection.</p>
