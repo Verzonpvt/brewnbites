@@ -18,7 +18,7 @@ function Gallery() {
 
       <br />
       <br />
-      <div className="gallery-grid">
+      <div className="gallery-grid-m">
               <div className="gallery-item">
                 <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Food" />
               </div>

@@ -36,7 +36,7 @@ function App() {
                   <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741170129943-download-removebg-preview%20(7)%201.png" alt="Pizza" />
                 </div>
                 <div className="food-item">
-                  <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741170129943-download-removebg-preview%20(2)%201.png" alt="item" />
+                  <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741170129943-download-removebg-preview%20(4)%201.png" alt="item" />
                 </div>
                 <div className="food-item">
                   <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741178756005-pngegg.png" alt="item2" />
