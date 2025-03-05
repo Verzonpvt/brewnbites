@@ -231,12 +231,12 @@ body {
 }
 
 .food-item:nth-child(2) {
-  top: 30%;
+  top: 25%;
   right: 10%;
 }
 
 .food-item:nth-child(3) {
-  bottom: 30%;
+  bottom: 25%;
   right: 10%;
 }
 
@@ -247,7 +247,7 @@ body {
 }
 
 .food-item:nth-child(5) {
-  bottom: 30%;
+  bottom: 25%;
   left: 10%;
 }
 
