@@ -56,7 +56,7 @@ function App() {
               <button className="learn-more-btn">Learn More</button>
             </div>
             <div className="why-choose-image">
-              <img src="dist\assets\abouthome.jpg" alt="Restaurant Interior" />
+              <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741166212784-abouthome.jpg" alt="Restaurant Interior" />
             </div>
           </div>
         </div>
