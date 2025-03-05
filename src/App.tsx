@@ -56,7 +56,7 @@ function App() {
               <button className="learn-more-btn">Learn More</button>
             </div>
             <div className="why-choose-image">
-              <img src="src\assets\restaurant\abouthome.jpg" alt="Restaurant Interior" />
+              <img src="assets\restaurant\abouthome.jpg" alt="Restaurant Interior" />
             </div>
           </div>
         </div>
