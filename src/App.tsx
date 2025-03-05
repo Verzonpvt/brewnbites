@@ -121,8 +121,7 @@ function App() {
             </div>
           </div>
           <div className="heritage-bg"></div>
-          <div className="heritage-accent"></div>
-          <div className="heritage-accent"></div>
+        
         </div>
       </section>
 
@@ -131,6 +130,7 @@ function App() {
         <div className="container">
           <div className="testimonials-title">
             <h2>Our happy customers</h2>
+            <div className="customers-divider"></div>
           </div>
           <div className="testimonials-grid">
             <div className="testimonial-card">
@@ -191,7 +191,7 @@ function App() {
             </div>
           </div>
         </div>
-      </section>
+      </section>  
 
       {/* Social Media Section */}
       <section className="social-media" id="gallery">

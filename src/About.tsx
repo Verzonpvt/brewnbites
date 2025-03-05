@@ -36,17 +36,19 @@ function About() {
             </div>
 
             <div className="about-story-section">
-              <div className="about-story-image">
-                <div className="accent"></div>
-                <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741177036843-close-up-delicious-burger-meal.jpg" alt="Restaurant Interior" />
-                <div className="accent"></div>
-              </div>
+              
               <div className="about-story-text">
                 <h2>Traditional Heritage, Modern Result</h2>
                 <div className="divider"></div>
                 <p>Located in Boston, Brew and Bites is your go-to spot for a relaxed dining experience. Our menu is crafted for food lovers, offering a perfect mix of comfort and flavor—freshly made pizzas, juicy burgers, classic bagels, crispy garlic bread, and a variety of beverages to complement every bite.</p>
                 <p>Whether you're here for a quick snack, a coffee break, or a full meal, we've got you covered with our diverse menu options. Our commitment to quality ingredients and exceptional service ensures that every visit to Brew & Bites is a memorable one.</p>
               </div>
+              <div className="about-story-image">
+                <div className="accent"></div>
+                <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741177036843-close-up-delicious-burger-meal.jpg" alt="Restaurant Interior" />
+                <div className="accent"></div>
+              </div>
+
             </div>
 
             <div className="about-story-section">
@@ -131,9 +133,6 @@ function About() {
               </div>
               <div className="gallery-item">
                 <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Food" />
-              </div>
-              <div className="gallery-item">
-                <img src="https://images.unsplash.com/photo-1562967914-608f82629710?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Food" />
               </div>
               <div className="gallery-item">
                 <img src="https://images.unsplash.com/photo-1562967914-608f82629710?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Food" />

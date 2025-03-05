@@ -17,14 +17,14 @@ const Footer = () => {
         </div>
         <div className="footer-info">
           <div className="footer-links">
-            <Link to="/">Home</Link>
-            <Link to="/menu">Menu</Link>
-            <Link to="/gallery">Gallery</Link>
-            <Link to="/about">About Us</Link>
+            <Link to="/">Home</Link><br />
+            <Link to="/menu">Menu</Link><br />
+            <Link to="/gallery">Gallery</Link><br />
+            <Link to="/about">About Us</Link><br />
           </div>
           <div className="footer-contact">
-            <p>848 King Street, Mesa, AZ 85201, Boston, USA</p>
-            <p>info@brewandbites.com</p>
+            <p>Brew & Bites, Tabela Road, near to Purohit Oil Mill<br /> opposite to City Plaza, Subhash Chowk <br />Sikar, Rajasthan - 332001</p><br />
+            <p id='email'>info@brewandbites.com</p>
           </div>
           <div className="footer-social">
             <a href="#"><Facebook size={16} /></a>
@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-copyright">
-          <p>© 2023 Brew & Bites. All rights reserved.</p>
+          <p>© 2025 Brew & Bites. All rights reserved.</p>
         </div>
       </div>
     </footer>
