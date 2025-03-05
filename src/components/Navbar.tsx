@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className="container">
         <nav className="navbar">
           <div className="logo">
-            <img src="src\assets\logo-nav.png" alt="Brew & Bites Logo" />
+            <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741166891570-logo-nav.png" alt="Brew & Bites Logo" />
           </div>
           <div className="nav-links">
             <Link to="/" className={isActive('/')}>Home</Link>

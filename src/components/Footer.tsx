@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-logo">
-            <img src="src\assets\logo-nav.png" alt="Brew & Bites Logo" />
+            <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741166891570-logo-nav.png" alt="Brew & Bites Logo" />
             <h3>Brew & Bites</h3>
           </div>
           <div className="footer-cta">
