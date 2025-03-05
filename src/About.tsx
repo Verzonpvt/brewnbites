@@ -74,16 +74,10 @@ function About() {
             <div className="locations-content">
               <h2>Find our locations</h2>
               <p>Serving fresh fish daily at Boston Harbor Islands, Boylston St, Congress St.</p>
-              <button className="locations-btn">Locations & Hours</button>
+              <button className="locations-btn">Get Location</button>
             </div>
             <div className="locations-images">
-              <div className="location-image">
-                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Poke Bowl" />
-              </div>
-              <div className="location-image">
-                <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Poke Bowl" />
-              </div>
-              
+              <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741187542747-Screenshot%20(123).png" alt="" />
             </div>
           </div>
         </div>

@@ -51,16 +51,17 @@ function App() {
       <section className="why-choose" id="about">
         <div className="container">
           <div className="why-choose-content">
-            <div className="why-choose-text">
-              <h2>Why choose Brew & Bites?</h2>
-              <div className="divider"></div>
-              <p>Located in SIKAR, Brew and Bites is your go-to spot for a relaxed dining experience.</p>
-              <p>Our menu is crafted for food lovers, offering a perfect mix of comfort and flavor—freshly made pizzas, juicy burgers, classic bagels, crispy garlic bread, and a variety of beverages to complement every bite. Whether you're here for a quick snack, a coffee break, or a full meal, we've got you covered with our diverse menu options.</p>
-              <button className="learn-more-btn">Learn More</button>
-            </div>
             <div className="why-choose-image">
               <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741166212784-abouthome.jpg" alt="Restaurant Interior" />
             </div>
+            <div className="why-choose-text">
+              <h2>Why choose Brew & Bites?</h2>
+              <div className="divider"></div>
+              <p id='big-p' >Located in SIKAR, Brew and Bites is your go-to spot for a relaxed dining experience.</p>
+              <p id='small-p'>Our menu is crafted for food lovers, offering a perfect mix of comfort and flavor—freshly made pizzas, juicy burgers, classic bagels, crispy garlic bread, and a variety of beverages to complement every bite. Whether you're here for a quick snack, a coffee break, or a full meal, we've got you covered with our diverse menu options.</p>
+              <button className="learn-more-btn">Learn More</button>
+            </div>
+            
           </div>
         </div>
       </section>
@@ -69,8 +70,9 @@ function App() {
       <section className="explore" id="menu">
         <div className="container">
           <div className="explore-title">
-            <h2>Explore</h2>
-            <div className="explore-divider"></div>
+            <h2>Explore <br />
+            <div className="explore-divider"></div></h2>
+            
           </div>
           <div className="explore-grid">
             <div className="explore-item">
@@ -173,24 +175,19 @@ function App() {
           </div>
         </div>
       </section>
+      
 
-      {/* Locations Section */}
-      <section className="locations">
+       {/* Locations Section */}
+       <section className="locations">
         <div className="container">
           <div className="locations-card">
             <div className="locations-content">
               <h2>Find our locations</h2>
               <p>Serving fresh fish daily at Boston Harbor Islands, Boylston St, Congress St.</p>
-              <button className="locations-btn">Locations & Hours</button>
+              <button className="locations-btn">Get Location</button>
             </div>
             <div className="locations-images">
-              <div className="location-image">
-                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Poke Bowl" />
-              </div>
-              <div className="location-image">
-                <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Poke Bowl" />
-              </div>
-             
+              <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741187542747-Screenshot%20(123).png" alt="" />
             </div>
           </div>
         </div>
