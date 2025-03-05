@@ -7,6 +7,7 @@ function Gallery() {
  
 
   return (
+    <>
     <div className="gallery-page">
       <Navbar />
       <br />
@@ -42,8 +43,11 @@ function Gallery() {
             </div>
             <br />
             <br />
-      <Footer />
+     
     </div>
+    <Footer />
+
+    </>
   );
 }
 

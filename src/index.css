@@ -286,9 +286,8 @@ body {
 /* Why Choose Section */
 .why-choose {
   background-color: #00000091;
-  background: url('assets/background.jpg');
+  background:linear-gradient(rgba(0, 0, 0, 0.598), rgba(0, 0, 0, 0.598)), url('assets/background.jpg');
   padding: 100px 0;
-  background-color: var(--section-bg);
 }
 
 .why-choose-image img{
@@ -454,7 +453,7 @@ body {
 .heritage {
   padding: 100px 0;
   background-color: var(--section-bg);
-  background: url(assets/background.jpg);
+  background:linear-gradient(rgba(0, 0, 0, 0.598), rgba(0, 0, 0, 0.598)), url('assets/background.jpg');
   position: relative;
   overflow: hidden;
 }
@@ -1001,8 +1000,8 @@ body {
 
 /* Gallery Page Styles */
 .gallery-page {
-  margin-inline: 10%;
   min-height: 100vh;
+  margin-inline: 10%;
   display: flex;
   flex-direction: column;
 }
