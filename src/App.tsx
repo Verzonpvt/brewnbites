@@ -112,7 +112,7 @@ function App() {
               <p>One of the reasons for poke's popularity is its versatility. While the traditional Hawaiian version features raw fish, modern variations substitute ingredients to cater to different dietary preferences, ensuring everyone can enjoy this nutritious and flavorful dish according to their preferences.</p>
             </div>
             <div className="heritage-image">
-              <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741170129937-image-removebg-preview%201.png" alt="Pizza Image" />
+              <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741176089970-delicious-pizza-on-white-background-top-view-ai-generated-free-photo.jpg" alt="Pizza Image" />
             </div>
           </div>
           <div className="heritage-bg"></div>
