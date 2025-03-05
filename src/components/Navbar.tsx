@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className="container">
         <nav className="navbar">
           <div className="logo">
-            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=80" alt="Brew & Bites Logo" />
+            <img src="src\assets\logo-nav.png" alt="Brew & Bites Logo" />
           </div>
           <div className="nav-links">
             <Link to="/" className={isActive('/')}>Home</Link>

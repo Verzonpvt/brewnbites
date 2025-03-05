@@ -39,7 +39,6 @@ function App() {
                   <Utensils size={40} color="#ffffff" />
                 </div>
               </div>
-              <p className="poke-description">Poke is a traditional Hawaiian dish that typically consists of diced raw fish (such as tuna or salmon) marinated.</p>
             </div>
           </div>
         </div>
@@ -57,7 +56,7 @@ function App() {
               <button className="learn-more-btn">Learn More</button>
             </div>
             <div className="why-choose-image">
-              <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Restaurant Interior" />
+              <img src="src\assets\restaurant\abouthome.jpg" alt="Restaurant Interior" />
             </div>
           </div>
         </div>
