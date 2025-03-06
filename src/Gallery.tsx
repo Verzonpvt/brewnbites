@@ -21,6 +21,14 @@ const Gallery = () => {
   return (
     <div className="min-h-screen bg-black-50">
       <Navbar />
+
+    {/* Gallery Hero */}
+
+      <section className="gallery-hero">
+        <div className="container">
+          <h1>Gallery</h1>
+        </div>
+      </section>
       
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-black">
        

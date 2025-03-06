@@ -30,7 +30,7 @@ function Menu() {
       <Navbar />
 
       {/* Menu Hero */}
-      <section className="menu-hero">
+      <section className="gallery-hero">
         <div className="container">
           <h1>Menu</h1>
         </div>
