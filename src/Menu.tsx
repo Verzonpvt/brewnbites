@@ -10,7 +10,7 @@ function Menu() {
   const categories = ['All', 'Burger', 'Pizza', 'Salad', 'Desserts', 'Drinks'];
   
   const menuItems = [
-    { id: 1, name: 'Pizza', icon: <PizzaIcon size={40} color="#ff6b00" />, description: 'Some description in one two lines of the jla,jax,s' },
+    { id: 1, name: 'Pizza',category:"Pizza", icon: <PizzaIcon size={40} color="#ff6b00" />, description: 'Some description in one two lines of the jla,jax,s' },
     { id: 2, name: 'Pizza', icon: <BurgerIcon size={40} color="#ff6b00" />,  description: 'Some description in one two lines of the jla,jax,s' },
     { id: 3, name: 'Pizza', icon: <BurgerIcon size={40} color="#ff6b00" />, description: 'Some description in one two lines of the jla,jax,s' },
     { id: 4, name: 'Pizza', icon: <PizzaIcon size={40} color="#ff6b00" />, description: 'Some description in one two lines of the jla,jax,s' },
@@ -20,7 +20,7 @@ function Menu() {
     { id: 8, name: 'Pizza', icon: <Coffee size={40} color="#ff6b00" />, description: 'Some description in one two lines of the jla,jax,s' },
     { id: 9, name: 'Pizza', icon: <Coffee size={40} color="#ff6b00" />, description: 'Some description in one two lines of the jla,jax,s' },
   ];
-  
+
   const filteredItems = activeCategory === 'All' 
     ? menuItems 
     : menuItems.filter(item => item.category === activeCategory);
