@@ -12,9 +12,14 @@ const Navbar = () => {
 
   const closeMobileMenu = () => {
     setMobileMenuOpen(false);
+    window.scrollTo(0, 0); // Scroll to top when closing mobile menu
   };
 
-  const isActive = (path: string) => {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
+  const isActive = (path) => {
     if (path === '/' && location.pathname === '/') {
       return 'active';
     }
@@ -29,10 +34,10 @@ const Navbar = () => {
             <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741166891570-logo-nav.png" alt="Brew & Bites Logo" />
           </div>
           <div className="nav-links">
-            <Link to="/" className={isActive('/')}>Home</Link>
-            <Link to="/menu" className={isActive('/menu')}>Menu</Link>
-            <Link to="/gallery" className={isActive('/gallery')}>Gallery</Link>
-            <Link to="/about" className={isActive('/about')}>About</Link>
+            <Link to="/" className={isActive('/')} onClick={scrollToTop}>Home</Link>
+            <Link to="/menu" className={isActive('/menu')} onClick={scrollToTop}>Menu</Link>
+            <Link to="/gallery" className={isActive('/gallery')} onClick={scrollToTop}>Gallery</Link>
+            <Link to="/about" className={isActive('/about')} onClick={scrollToTop}>About</Link>
           </div>
           <button className="contact-btn">Contact Us</button>
           <button className="mobile-menu-btn" onClick={toggleMobileMenu} aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}>

@@ -5,18 +5,21 @@ import Footer from './components/Footer';
 
 function Menu() {
   const [activeCategory, setActiveCategory] = useState('All');
+
+  const all_c= ['All']
   
-  const categories = ['All', 'Burger', 'Pizza', 'Sandwitch', 'Patties', 'Shakes'];
+  const categories = [ 'Burger', 'Pizza', 'Sandwich', 'Patties', 'Shakes'];
   
 
     const menuItems = [
       { name: 'Pizza-Menu', category: 'Pizza', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741255979559-Frame%209%20(1).png" },
       { name: 'Cheese Burger', category: 'Burger', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741255144245-Group%2012.png" },
-      { name: 'Sandwitch',category:'Sandwitch', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741255860904-Group%2010.png" },
+      { name: 'Sandwich',category:'Sandwich', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741255860904-Group%2010.png" },
       { name: 'Patties', category: 'Patties', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741256266736-Group%2013.png" },
       { name: 'Shakes', category: 'Shakes', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741254641124-Group%208.png" }
     ];
   
+
 
   const filteredItems = activeCategory === 'All' 
     ? menuItems 
@@ -26,8 +29,8 @@ function Menu() {
     <div className="menu-page">
       <Navbar />
 
-      {/* Menu Hero */}
-      <section className="gallery-hero">
+      {/* Menu Hero */} 
+      <section className="menu-hero">
         <div className="container">
           <h1>Menu</h1>
         </div>

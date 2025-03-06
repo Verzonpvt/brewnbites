@@ -74,6 +74,12 @@ const Gallery = () => {
               <span className="text-white text-lg font-semibold">Asian Fusion</span>
             </div>
           </div>
+          <div className="relative rounded-xl overflow-hidden group">
+            <img src={images[4]} alt="Food 5" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+            <div className="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+              <span className="text-white text-lg font-semibold">Pizza Artisan</span>
+            </div>
+          </div>
           <div className="relative rounded-xl overflow-hidden md:col-span-2 group">
             <img src={images[6]} alt="Food 7" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
             <div className="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
