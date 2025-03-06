@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Coffee, Pizza as PizzaIcon, Merge as BurgerIcon, Salad, Dessert, Coffee as DrinksIcon, Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -7,19 +6,17 @@ import Footer from './components/Footer';
 function Menu() {
   const [activeCategory, setActiveCategory] = useState('All');
   
-  const categories = ['All', 'Burger', 'Pizza', 'Salad', 'Desserts', 'Drinks'];
+  const categories = ['All', 'Burger', 'Pizza', 'Sandwitch', 'Patties', 'Shakes'];
   
-  const menuItems = [
-    { id: 1, name: 'Pizza',category:"Pizza", icon: <PizzaIcon size={40} color="#ff6b00" />, description: 'Some description in one two lines of the jla,jax,s' },
-    { id: 2, name: 'Pizza', icon: <BurgerIcon size={40} color="#ff6b00" />,  description: 'Some description in one two lines of the jla,jax,s' },
-    { id: 3, name: 'Pizza', icon: <BurgerIcon size={40} color="#ff6b00" />, description: 'Some description in one two lines of the jla,jax,s' },
-    { id: 4, name: 'Pizza', icon: <PizzaIcon size={40} color="#ff6b00" />, description: 'Some description in one two lines of the jla,jax,s' },
-    { id: 5, name: 'Pizza', icon: <Coffee size={40} color="#ff6b00" />, description: 'Some description in one two lines of the jla,jax,s' },
-    { id: 6, name: 'Pizza', icon: <Coffee size={40} color="#ff6b00" />, description: 'Some description in one two lines of the jla,jax,s' },
-    { id: 7, name: 'Pizza', icon: <PizzaIcon size={40} color="#ff6b00" />, description: 'Some description in one two lines of the jla,jax,s' },
-    { id: 8, name: 'Pizza', icon: <Coffee size={40} color="#ff6b00" />, description: 'Some description in one two lines of the jla,jax,s' },
-    { id: 9, name: 'Pizza', icon: <Coffee size={40} color="#ff6b00" />, description: 'Some description in one two lines of the jla,jax,s' },
-  ];
+
+    const menuItems = [
+      { name: 'Pizza-Menu', category: 'Pizza', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741255979559-Frame%209%20(1).png" },
+      { name: 'Cheese Burger', category: 'Burger', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741255144245-Group%2012.png" },
+      { name: 'Sandwitch',category:'Sandwitch', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741255860904-Group%2010.png" },
+      { name: 'Patties', category: 'Patties', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741256266736-Group%2013.png" },
+      { name: 'Shakes', category: 'Shakes', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741254641124-Group%208.png" }
+    ];
+  
 
   const filteredItems = activeCategory === 'All' 
     ? menuItems 
@@ -36,39 +33,38 @@ function Menu() {
         </div>
       </section>
 
-      {/* Menu Categories */}
-      <section className="menu-categories">
-        <div className="container">
-          <div className="category-tabs">
-            {categories.map(category => (
-              <button 
-                key={category}
-                className={`category-tab ${activeCategory === category ? 'active' : ''}`}
-                onClick={() => setActiveCategory(category)}
-              >
-                {category}
-              </button>
-            ))}
-          </div>
-        </div>
-      </section>
+     {/* Menu Categories */}
+<section className="menu-categories">
+  <div className="container">
+    <div className="category-tabs">
+      {categories.map(category => (
+        <button 
+          key={category}
+          className={`category-tab ${activeCategory === category ? 'active' : ''}`}
+          onClick={() => setActiveCategory(category)}
+        >
+          {category}
+        </button>
+      ))}
+    </div>
+  </div>
+</section>
 
-      {/* Menu Items */}
-      <section className="menu-items">
-        <div className="container">
-          <div className="menu-grid">
-            {filteredItems.map(item => (
-              <div key={item.id} className="menu-item">
-                <div className="menu-item-icon">
-                  {item.icon}
-                </div>
-                <h3>{item.name}</h3>
-                <p>{item.description}</p>
-              </div>
-            ))}
+{/* Menu Items */}
+<section className="menu-items">
+  <div className="container">
+    <div className="menu-grid">
+      {filteredItems.map(item => (
+        <div key={item.id} className="menu-item">
+          <h3>{item.name}</h3>
+          <div className="menu-item-image">
+            <img src={item.image} alt={item.name} />
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       <Footer />
     </div>
