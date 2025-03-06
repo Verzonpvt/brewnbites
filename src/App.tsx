@@ -16,7 +16,7 @@ function App() {
             <div className="hero-text">
               <h1 id='yp'>Your perfect</h1>
               <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741273114266-Frame%2012%20(1).png" alt="b&b" />
-              <h1 id='iyt'>in your town</h1>
+              <h1 id='iyt'>in your town </h1>
             </div>
             <div className="hero-para">
               <p>Brew and Bites is a cozy, 100% vegetarian café serving a variety of flavorful bites and refreshing <br /> brews. Our menu features cheesy pizzas, crispy garlic bread, loaded burgers, classic Maggi, <br /> and handcrafted beverages, all made with fresh, high-quality ingredients.</p>
