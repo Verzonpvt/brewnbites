@@ -211,12 +211,21 @@ body {
   position: absolute;
   width: 80px;
   height: 80px;
-  border-radius: ;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   
+}
+
+.minion{
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .food-item img {
@@ -257,9 +266,9 @@ body {
   left: 10%;
 }
 
-.food-item:nth-child(7){
-  top:40%;
-  left: 40%;
+.minion{
+  top:34%;
+  left: 34%;
   
 
 }
@@ -516,7 +525,7 @@ body {
   height: 400px;
   object-fit: cover;
   border-radius: 50%;
-  animation: rotate 6s linear infinite;
+  animation: rotate 10s linear infinite;
 
 }
 
