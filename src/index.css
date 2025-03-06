@@ -624,6 +624,7 @@ body {
   padding-top: 30px auto;
   position: relative;
   overflow: hidden;
+  margin: auto;
 }
 
 .locations-content {
@@ -728,6 +729,7 @@ body {
 /* Social Media Section */
 .social-media {
  padding: 30px 0;
+ margin: auto;
   background:linear-gradient(rgba(0, 0, 0, 0.748),rgba(0, 0, 0, 0.712)) , url('assets/background.jpg');
 }
 
