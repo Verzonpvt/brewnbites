@@ -14,37 +14,19 @@ function App() {
         <div className="container">
           <div className="hero-content">
             <div className="hero-text">
-              <h1>Perfect Gateway for your cravings</h1>
-              <p>Poke is a traditional Hawaiian dish that typically consists of diced raw fish (such as tuna or salmon) marinated in soy sauce and sesame oil.</p>
-              <Link to="/menu" className="cta-btn">View Menu</Link>
+              <h1 id='yp'>Your perfect</h1>
+              <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741273114266-Frame%2012%20(1).png" alt="b&b" />
+              <h1 id='iyt'>in your town</h1>
             </div>
-            <div className="hero-image">
-              <div className="food-circle">
-                <div className="food-item">
-                  <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741170129943-download-removebg-preview%20(5)%201.png" alt="Cocktail" />
-                </div>
-                <div className="food-item">
-                  <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741170129954-pizza%206.png" alt="Burger" />
-                </div>
-                <div className="food-item">
-                  <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741170129954-3361135%201.png" alt="Pizza" />
-                </div>
-                <div className="food-item">
-                  <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741170129940-877951%201.png" alt="Pizza" />
-                </div>
-                <div className="food-item">
-                  <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741170129943-download-removebg-preview%20(7)%201.png" alt="Pizza" />
-                </div>
-                <div className="food-item">
-                  <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741170129943-download-removebg-preview%20(4)%201.png" alt="item" />
-                </div>
-                <div className="minion">
-                  <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741252098965-pngwing.com.png" alt="item2" />
-                </div>
-              </div>
-            </div>
+            <div className="hero-para">
+              <p>Brew and Bites is a cozy, 100% vegetarian café serving a variety of flavorful bites and refreshing <br /> brews. Our menu features cheesy pizzas, crispy garlic bread, loaded burgers, classic Maggi, <br /> and handcrafted beverages, all made with fresh, high-quality ingredients.</p>
+            </div> 
+          </div>
+          <div className="cta-btn-hero">
+            <Link to="/menu" className="cta-btn">View Menu</Link>
           </div>
         </div>
+        
       </section>
 
       {/* Why Choose Section */}
