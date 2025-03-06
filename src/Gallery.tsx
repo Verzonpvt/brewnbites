@@ -72,6 +72,15 @@ const Gallery = () => {
               <span className="text-white text-lg font-semibold">Seafood Delight</span>
             </div>
           </div>
+
+          {/* Fourth row */}
+          <div className="relative rounded-xl overflow-hidden md:col-span-2 group">
+            <img src={images[5]} alt="Food 6" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+            <div className="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+              <span className="text-white text-lg font-semibold">Asian Fusion</span>
+            </div>
+          </div>
+          
         </div>
       </main>
 
