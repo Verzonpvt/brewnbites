@@ -1394,12 +1394,12 @@ hr{
 
   .mgrid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px; /* Reduce gap */
+    gap: 5px; /* Reduce gap */
   }
   
   .mitem {
-    width: 150px; /* Reduce size */
-    height: 150px;
+    width: 125px; /* Reduce size */
+    height: 125px;
   
   }
 
