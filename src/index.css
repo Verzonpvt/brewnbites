@@ -1418,9 +1418,9 @@ hr{
   }
 
   .mitem {
-    width: 180px; /* Further reduce size */
-    height: 180px;
-    padding: 15px;
+    width: 150px; /* Further reduce size */
+    height: 150px;
+    padding: 0px;
   }
 
   .mitem h3 {
