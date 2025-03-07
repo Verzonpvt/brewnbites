@@ -39,7 +39,9 @@ function App() {
               <div className="divider"></div>
               <p id='big-p' >Located in SIKAR, Brew and Bites is your go-to spot for a relaxed dining experience.</p>
               <p id='small-p'>Our menu is crafted for food lovers, offering a perfect mix of comfort and flavor—freshly made pizzas, juicy burgers, classic bagels, crispy garlic bread, and a variety of beverages to complement every bite. Whether you're here for a quick snack, a coffee break, or a full meal, we've got you covered with our diverse menu options.</p>
-              <button className="learn-more-btn">Learn More</button>
+              <div className="learn-more-btn">
+                <Link to="/about" className="cta-btn">Learn More</Link>
+              </div>     
             </div>
             
           </div>
@@ -94,10 +96,10 @@ function App() {
           <div className="heritage-content">
             <div className="heritage-text">
               <h2>Traditional Heritage, Modern Result</h2>
-              <p>One of the reasons for poke's popularity is its versatility. While the traditional Hawaiian version features raw fish, modern variations substitute ingredients to cater to different dietary preferences, ensuring everyone can enjoy this nutritious and flavorful dish according to their preferences.</p>
+              <p>Located in the heart of Sikar, Brew & Bite reflects Rajasthan’s rich heritage with a modern twist. Inspired by traditional hospitality, we now serve crispy pizzas, juicy burgers, and refreshing beverages to delight every palate. Crafted with the finest ingredients, our menu brings you flavors both classic and new. Experience the perfect mix of tradition and taste at <b>Brew & Bite, Sikar!</b> </p>
             </div>
             <div className="heritage-image">
-              <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741373920869-top-view-vegetarian-pizza-with-eggplant-bell-pepper-red-onion-tomato-mushroom-removebg-preview.png" alt="Pizza Image" />
+              <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741379538520-404920538_14d9a501-5da7-411a-a965-3bb7d47951fd-removebg-preview.png" alt="Pizza Image" />
             </div>
           </div>
           <div className="heritage-bg"></div>
@@ -116,40 +118,40 @@ function App() {
             <div className="testimonial-card">
               <div className="testimonial-header">
                 <div className="testimonial-avatar">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Alok Shah" />
+                  <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741376140380-1686249143827.jpg" alt="Alok Shah" />
                 </div>
                 <div className="testimonial-name">
-                  <h3>Alok Shah</h3>
+                  <h3>Himanshu</h3>
                 </div>
               </div>
               <div className="testimonial-text">
-                <p>I'm a big fan of Brew & Bites, and this place always delivers! The quality of the ingredients is top-notch, and the variety of beverages makes you high-reach, and the variety of toppings allows you to customize your bowl.</p>
+                <p>Brew and Bites is a delight for vegetarians! The food is fresh, delicious, and served with great care. Their cheesy pizzas, crispy garlic bread, and refreshing beverages make every visit worthwhile. The cozy ambiance adds to the experience. A must-visit for food lovers!</p>
               </div>
             </div>
             <div className="testimonial-card">
               <div className="testimonial-header">
                 <div className="testimonial-avatar">
-                  <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Alok Shah" />
+                  <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741376488021-112468319.jpg" alt="Alok Shah" />
                 </div>
                 <div className="testimonial-name">
-                  <h3>Alok Shah</h3>
+                  <h3>Alok</h3>
                 </div>
               </div>
               <div className="testimonial-text">
-                <p>I'm a big fan of Brew & Bites, and this place always delivers! The quality of the ingredients is top-notch, and the variety of beverages makes you high-reach, and the variety of toppings allows you to customize your bowl.</p>
+                <p>I had an amazing experience at Brew and Bites! 🍕🍔 From the delicious pizzas to the perfectly cooked Maggi, every bite was a delight. The ambiance is cozy, and the staff is super friendly. Loved their refreshing beverages and crispy garlic bread! A must-visit spot in Sikar for all vegetarian food lovers. Highly recommended! ⭐⭐⭐⭐⭐</p>
               </div>
             </div>
             <div className="testimonial-card">
               <div className="testimonial-header">
                 <div className="testimonial-avatar">
-                  <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Alok Shah" />
+                  <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741376716523-vikas-makwana-upn798iEEYM-unsplash.jpg" alt="Alok Shah" />
                 </div>
                 <div className="testimonial-name">
-                  <h3>Alok Shah</h3>
+                  <h3>Soumya</h3>
                 </div>
               </div>
               <div className="testimonial-text">
-                <p>I'm a big fan of Brew & Bites, and this place always delivers! The quality of the ingredients is top-notch, and the variety of beverages makes you high-reach, and the variety of toppings allows you to customize your bowl.</p>
+                <p>What impressed me most was the cleanliness and hygiene standards they maintain. A great spot for a safe and tasty meal!</p>
               </div>
             </div>
           </div>
@@ -163,7 +165,9 @@ function App() {
           <div className="locations-card">
             <div className="locations-content">
               <h2>Find our locations</h2>
-              <p>Serving fresh fish daily at Boston Harbor Islands, Boylston St, Congress St.</p>
+              <p> Brew & Bites, Tabela Road, near to Purohit Oil Mill  <br />
+opposite to City Plaza, Subhash Chowkbr <br />
+Sikar, Rajasthan - 332001</p>
               <button
   className="locations-btn"
   onClick={() => window.open("https://maps.app.goo.gl/pj9dZsiwn2z4b3vK9", "_blank")}
@@ -203,31 +207,31 @@ function App() {
             </div>
             <div className="gallery-grid">
               <div className="gallery-item">
-                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Food" />
-              </div>
-              <div className="gallery-item">
-                <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Food" />
-              </div>
-              <div className="gallery-item">
-                <img src="https://images.unsplash.com/photo-1547592180-85f173990554?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Food" />
-              </div>
-              <div className="gallery-item">
-                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Food" />
+                <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741375100623-130.jpg" alt="Food" />
               </div>
               <div className="gallery-item">
                 <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Food" />
               </div>
               <div className="gallery-item">
-                <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Food" />
+                <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741375100619-123.jpg" alt="Food" />
               </div>
               <div className="gallery-item">
-                <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Food" />
+                <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741375657071-Veg-Burger.jpg" alt="Food" />
               </div>
               <div className="gallery-item">
-                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Food" />
+                <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741375100622-128.jpg" alt="Food" />
               </div>
               <div className="gallery-item">
-                <img src="https://images.unsplash.com/photo-1562967914-608f82629710?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Food" />
+                <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741375870739-2151846528.jpg" alt="Food" />
+              </div>
+              <div className="gallery-item">
+                <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741375100623-129.jpg" alt="Food" />
+              </div>
+              <div className="gallery-item">
+                <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741375975659-1367.jpg" alt="Food" />
+              </div>
+              <div className="gallery-item">
+                <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741375100621-125.jpg" alt="Food" />
               </div>
             </div>
           </div>
