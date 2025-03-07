@@ -1393,14 +1393,14 @@ hr{
 @media (max-width: 768px) {
 
   .mgrid {
-    grid-template-columns: repeat(2, 1fr); /* Change to 2 columns */
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px; /* Reduce gap */
   }
   
   .mitem {
-    width: 200px; /* Reduce size */
-    height: 200px;
-    padding: px;
+    width: 150px; /* Reduce size */
+    height: 150px;
+  
   }
 
   .mitem h3 {
@@ -1414,7 +1414,7 @@ hr{
 
 @media (max-width: 480px) {
   .mgrid {
-    grid-template-columns: repeat(1, 1fr); /* Single column layout */
+    grid-template-columns: repeat(2, 1fr); /* Single column layout */
   }
 
   .mitem {
