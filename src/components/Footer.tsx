@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-logo">
-            <img src="src\assets\cafelogo.png" alt="Brew & Bites Logo" />
+            <img src="./assets/cafelogo.png" alt="Brew & Bites Logo" />
             <h3>Brew & Bites</h3>
           </div>
           <div className="footer-cta">
