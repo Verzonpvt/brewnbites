@@ -1,8 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 :root {
   --primary-color: #ff6b00;
@@ -152,13 +150,9 @@ body {
   z-index: 99;
 }
 
-
-
 .hero-text h1{
   font-size: 40px;
 }
-
-
 
 #yp {
   position: absolute;
@@ -192,6 +186,7 @@ body {
 }
 .hero-para p{
     padding-top :20px ;
+    color: #c9c1c1;
 }
 
 .cta-btn {
@@ -1124,35 +1119,177 @@ body {
   z-index: 1;
   text-align: center;
 }
+.menu-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
+/* Hero Section */
+.menu-hero {
+  background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.menu-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.menu-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+}
+
+/* Categories Section */
 .menu-categories {
-  padding: 30px 0;
+  position: relative;
+  padding: 15px 0;
   background-color: var(--dark-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .category-tabs {
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+  white-space: nowrap;
+  max-width: 80%;
+  margin: auto;
+}
+
+/* Hide scrollbar but keep scroll functionality */
+.category-tabs::-webkit-scrollbar {
+  display: none;
+}
+.category-tabs {
+  -ms-overflow-style: none;  /* Hide scrollbar for IE/Edge */
+  scrollbar-width: none;  /* Hide scrollbar for Firefox */
 }
 
 .category-tab {
-  padding: 10px 20px;
+  padding: 10px 16px;
   border: none;
   background-color: transparent;
   color: var(--text-color);
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s;
-  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  white-space: nowrap;
+  font-size: 16px;
 }
 
+.category-tab:hover,
 .category-tab.active {
   background-color: var(--primary-color);
+  color: white;
 }
 
+/* Scroll Buttons */
+.scroll-btn {
+  background: var(--dark-bg);
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  padding: 8px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  transition: background 0.3s;
+}
+
+.scroll-btn:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+.scroll-btn.left {
+  left: 10px;
+}
+
+.scroll-btn.right {
+  right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-categories {
+    flex-direction: column;
+    padding: 10px;
+    
+  }
+
+  .category-tabs {
+    gap: 8px;
+    padding: 8px 0;
+    max-width: 95%;
+  }
+
+  .category-tab {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .scroll-btn {
+    width: 28px;
+    height: 28px;
+    padding: 6px;
+  }
+
+  .scroll-btn.left {
+    left: 5px;
+  }
+
+  .scroll-btn.right {
+    right: 5px;
+  }
+}
+
+
+hr{
+  
+  width: 900px;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  hr{
+    display: none;
+  }  
+}
+
+
+
 .menu-items {
-  padding: 50px 0 100px;
+  padding: 0px 0 100px;
   background-color: var(--dark-bg);
   flex-grow: 1;
   max-width: 800px;
@@ -1183,6 +1320,95 @@ body {
   font-size: 14px;
   line-height: 1.5;
   color: #666;
+}
+
+/* ======= */
+
+.mitems {
+  padding: 0px 0 100px;
+  background-color: var(--dark-bg);
+  flex-grow: 1;
+  margin-top: 0;
+}
+
+.mgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.mitem {
+  background-color: #f9f9f9;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  text-align: center;
+  color: #333;
+  margin: 0 auto;
+}
+
+.mitem-icon {
+  margin-bottom: 15px;
+}
+
+.mitem h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.mitem p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+
+  .mgrid {
+    grid-template-columns: repeat(2, 1fr); /* Change to 2 columns */
+    gap: 20px; /* Reduce gap */
+  }
+  
+  .mitem {
+    width: 200px; /* Reduce size */
+    height: 200px;
+    padding: 20px;
+  }
+
+  .mitem h3 {
+    font-size: 20px; /* Slightly smaller font */
+  }
+
+  .mitem p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mgrid {
+    grid-template-columns: repeat(1, 1fr); /* Single column layout */
+  }
+
+  .mitem {
+    width: 180px; /* Further reduce size */
+    height: 180px;
+    padding: 15px;
+  }
+
+  .mitem h3 {
+    font-size: 18px;
+  }
+
+  .mitem p {
+    font-size: 12px;
+  }
 }
 
 /* Gallery Page Styles */
@@ -1802,4 +2028,46 @@ body {
     gap: 50px;
   }
 }
+/* whatsapp-icon */
 
+.floating-icons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.whatsapp-icon,
+.instagram-icon {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-icon img,
+.instagram-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.whatsapp-icon:hover,
+.instagram-icon:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-icon {
+  background-color: #25d366; /* WhatsApp green */
+}
+
+.instagram-icon {
+  background-color: #e4405f; /* Instagram pink-red */
+}

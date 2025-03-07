@@ -14,9 +14,7 @@ function App() {
         <div className="container">
           <div className="hero-content">
             <div className="hero-text">
-              <h1 id='yp'>Your perfect</h1>
               <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741273114266-Frame%2012%20(1).png" alt="b&b" />
-              <h1 id='iyt'>in your town </h1>
             </div>
             <div  className="hero-para">
               <p>Brew and Bites is a cozy, 100% vegetarian café serving a variety of flavorful bites and refreshing <br /> brews. Our menu features cheesy pizzas, crispy garlic bread, loaded burgers, classic Maggi, <br /> and handcrafted beverages, all made with fresh, high-quality ingredients.</p>
@@ -166,7 +164,12 @@ function App() {
             <div className="locations-content">
               <h2>Find our locations</h2>
               <p>Serving fresh fish daily at Boston Harbor Islands, Boylston St, Congress St.</p>
-              <button className="locations-btn">Get Location</button>
+              <button
+  className="locations-btn"
+  onClick={() => window.open("https://maps.app.goo.gl/pj9dZsiwn2z4b3vK9", "_blank")}
+>
+  Get Location
+</button>
             </div>
             <div className="locations-images">
               <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741187542747-Screenshot%20(123).png" alt="" />
@@ -230,6 +233,31 @@ function App() {
           </div>
         </div>
       </section>
+
+      {/* =================Whatsapp icon */}
+<section className="whatsapp">
+<div className="floating-icons">
+  
+
+  <a
+    href="https://www.instagram.com/bb_brewandbites?igsh=NHNhY2pzdHlpdHdi" // Replace with your Instagram link
+    className="instagram-icon"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
+  </a>
+  <a
+    href="https://chat.whatsapp.com/JlOAfSXq7VdInUEkYhLfHo" // Replace with your WhatsApp number
+    className="whatsapp-icon"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+  </a>
+</div>
+
+</section>
 
       <Footer />
     </div>
