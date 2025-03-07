@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
-
+import cafelogo from '../assets/cafelogo.png';
 const scrollToTop = () => {
   window.scrollTo(0, 0);
 };
@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-logo">
-            <img src="\cafelogo.png" alt="Brew & Bites Logo" />
+            <img src={cafelogo} alt="Brew & Bites Logo" />
             <h3>Brew & Bites</h3>
           </div>
           <div className="footer-cta">
