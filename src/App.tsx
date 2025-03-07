@@ -147,7 +147,7 @@ function App() {
                   <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741376716523-vikas-makwana-upn798iEEYM-unsplash.jpg" alt="Alok Shah" />
                 </div>
                 <div className="testimonial-name">
-                  <h3>Soumya</h3>
+                  <h3>Tanuja</h3>
                 </div>
               </div>
               <div className="testimonial-text">
