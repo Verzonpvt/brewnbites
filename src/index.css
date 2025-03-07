@@ -1415,12 +1415,16 @@ hr{
 @media (max-width: 480px) {
   .mgrid {
     grid-template-columns: repeat(2, 1fr); /* Single column layout */
+    margin-bottom:100px ;
+    gap: 25px;
   }
-
+  .menu-items{
+    display: none;
+  }
   .mitem {
-    width: 150px; /* Further reduce size */
-    height: 150px;
-    padding: 0px;
+    width: 125px; /* Further reduce size */
+    height: 125px;
+    padding: 5px;
   }
 
   .mitem h3 {
