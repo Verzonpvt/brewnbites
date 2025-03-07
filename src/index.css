@@ -1284,12 +1284,12 @@ body {
   }
 
   .scroll-btn.left {
-    left: 10px;
+    left: 0px;
     z-index: ;
   }
 
   .scroll-btn.right {
-    right: 10px;
+    right: 0px;
   }
 }
 
