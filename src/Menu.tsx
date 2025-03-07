@@ -28,15 +28,16 @@ function Menu() {
     // ========================
     
   const mitems = [
-    { id: 1, name: 'Pizza', category1: 'All', icon: <PizzaIcon size={40} color="#ff6b00" />, description: 'Some description in one two lines of the jla,jax,s' },
-    { id: 2, name: 'French Fries', category1: 'All', icon: <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Pizza" style={{width: '40px', height: '40px'}} />, description: 'Some description in one two lines of the jla,jax,s' },
-    { id: 3, name: 'Burger', category1: 'All', icon: <BurgerIcon size={40} color="#ff6b00" />, description: 'Some description in one two lines of the jla,jax,s' },
-    { id: 4, name: 'Coffee & Shakes', category1: 'All', icon: <PizzaIcon size={40} color="#ff6b00" />, description: 'Some description in one two lines of the jla,jax,s' },
-    { id: 5, name: 'Mocktails', category1: 'All', icon: <Coffee size={40} color="#ff6b00" />, description: 'Some description in one two lines of the jla,jax,s' },
-    { id: 6, name: 'Patties', category1: 'All', icon: <Coffee size={40} color="#ff6b00" />, description: 'Some description in one two lines of the jla,jax,s' },
-    { id: 7, name: 'Garlic Bread', category1: 'All', icon: <PizzaIcon size={40} color="#ff6b00" />, description: 'Some description in one two lines of the jla,jax,s' },
-    { id: 8, name: 'Sandwich', category1: 'All', icon: <Coffee size={40} color="#ff6b00" />, description: 'Some description in one two lines of the jla,jax,s' },
-    { id: 9, name: 'Maggie', category1: 'All', icon: <Coffee size={40} color="#ff6b00" />, description: 'Some description in one two lines of the jla,jax,s' },
+    { id: 1, name: 'Pizza', category1: 'All',image:"https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741351999432-Frame%2026.png" },
+    { id: 2, name: 'French Fries', category1: 'All', image:"https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741351999434-Frame%2027.png" },
+    { id: 3, name: 'Burger', category1: 'All', image:"https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741351999434-Frame%2028.png" },
+    { id: 4, name: 'Coffee ', category1: 'All',image:"https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741351999434-Frame%2030.png" },
+    { id: 5, name: 'Shake', category1: 'All',image:"https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741351999434-Frame%2029.png" },
+    { id:6, name: 'Mocktails', category1: 'All',image:"https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741351999434-Frame%2031.png" },
+    { id: 7, name: 'Garlic Bread', category1: 'All',image:"https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741351999435-Frame%2035.png"},
+    { id: 8, name: 'Sandwich', category1: 'All',image:"https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741351999435-Frame%2033.png" },
+    { id: 9, name: 'Maggie', category1: 'All', image:"https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741351999435-Frame%2034.png" },
+    { id: 10, name: 'Patties', category1: 'All', image:"https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741351999434-Frame%2032.png"},
   ];
 
   const filteredItems1 = activeCategory === 'All' 
@@ -118,7 +119,6 @@ function Menu() {
     <div className="mgrid">
       {filteredItems1.map(item => (
         <div key={item.id} className="mitem">
-          <h3>{item.name}</h3>
           <div className="mitem-image">
             <img src={item.image} alt={item.name} />
           </div>
