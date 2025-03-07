@@ -24,8 +24,6 @@ function Menu() {
       {  category: 'Sandwich', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741358584500-Frame%2021.png" },
       {  category: 'Maggie', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741358584501-Frame%2016.png" },
     ];
-
-
     // ========================
     
   const mitems = [
@@ -53,14 +51,17 @@ function Menu() {
 
     const scroll = (direction) => {
       if (scrollRef.current) {
-        const { scrollLeft, clientWidth } = scrollRef.current;
-        const scrollAmount = clientWidth / 2;
-        scrollRef.current.scrollTo({
-          left: direction === "left" ? scrollLeft - scrollAmount : scrollLeft + scrollAmount,
-          behavior: "smooth",
-        });
+        const { scrollLeft, clientWidth, scrollWidth } = scrollRef.current;
+        const scrollAmount = clientWidth * 0.8; // Adjust scroll amount for small screens
+    
+        if (direction === "left") {
+          scrollRef.current.scrollTo({ left: Math.max(scrollLeft - scrollAmount, 0), behavior: "smooth" });
+        } else {
+          scrollRef.current.scrollTo({ left: Math.min(scrollLeft + scrollAmount, scrollWidth), behavior: "smooth" });
+        }
       }
     };
+    
 
   return (
     <div className="menu-page">
@@ -72,6 +73,8 @@ function Menu() {
           <h1>Menu</h1>
         </div>
       </section>
+
+    {/* Menu Categories */}
 
       <section className="menu-categories">
         <div className="container">
@@ -102,10 +105,14 @@ function Menu() {
   <div className="container">
     <div className="menu-grid">
       {filteredItems.map(item => (
-        <div key={item.id} className="menu-item">
-          <h3>{item.name}</h3>
-          <div className="menu-item-image">
-            <img src={item.image} alt={item.name} />
+        <div key={item.category} className="menu-item">
+          <h3>{item.category}</h3>
+          <div 
+            className="menu-item-image" 
+            onClick={() => setActiveCategory(item.category)} 
+            style={{ cursor: "pointer" }} 
+          >
+            <img src={item.image} alt={item.category} />
           </div>
         </div>
       ))}
@@ -113,13 +120,16 @@ function Menu() {
   </div>
 </section>
 
-{/* ================= */}
-
 <section className="mitems">
   <div className="container">
     <div className="mgrid">
       {filteredItems1.map(item => (
-        <div key={item.id} className="mitem">
+        <div 
+          key={item.id} 
+          className="mitem" 
+          onClick={() => setActiveCategory(item.name)} 
+          style={{ cursor: "pointer" }} 
+        >
           <div className="mitem-image">
             <img src={item.image} alt={item.name} />
           </div>
@@ -131,28 +141,34 @@ function Menu() {
 
 {/* =================Whatsapp icon */}
 <section className="whatsapp">
-<div className="floating-icons">
-<a
-    href="https://www.instagram.com/bb_brewandbites?igsh=NHNhY2pzdHlpdHdi" // Replace with your Instagram link
-    className="instagram-icon"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
-  </a>
-  <a
-    href="https://chat.whatsapp.com/JlOAfSXq7VdInUEkYhLfHo" // Replace with your WhatsApp number
-    className="whatsapp-icon"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
-  </a>
-
-  
-</div>
-
+  <div className="floating-icons">
+    <a
+      href="https://maps.app.goo.gl/pj9dZsiwn2z4b3vK9" // Replace with your Google Maps link
+      className="maps-icon"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img src="https://img.icons8.com/?size=100&id=DcygmpZqBEd9&format=png&color=000000" alt="Maps" />
+    </a>
+    <a
+      href="https://www.instagram.com/bb_brewandbites?igsh=NHNhY2pzdHlpdHdi"
+      className="instagram-icon"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
+    </a>
+    <a
+      href="https://chat.whatsapp.com/JlOAfSXq7VdInUEkYhLfHo"
+      className="whatsapp-icon"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    </a>
+  </div>
 </section>
+
 
       <Footer />
     </div>

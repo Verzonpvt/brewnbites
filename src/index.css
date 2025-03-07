@@ -1165,7 +1165,7 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  max-width: 950px;
+  max-width: 800px;
   margin: auto;
 }
 
@@ -1233,11 +1233,11 @@ body {
 }
 
 .scroll-btn.left {
-  left: 70px;
+  left: 250px;
 }
 
 .scroll-btn.right {
-  right: 70px;
+  right: 250px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1269,7 +1269,7 @@ body {
   .category-tabs {
     display: flex;
     gap: 12px;
-    overflow-x: Hidden;
+    overflow-x: auto;
     scroll-behavior: smooth;
     padding: 10px 0;
     white-space: nowrap;
@@ -1285,13 +1285,71 @@ body {
 
   .scroll-btn.left {
     left: 0px;
-    z-index: ;
+    
   }
 
   .scroll-btn.right {
     right: 0px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .menu-categories {
+    position: relative;
+    padding: 15px 0;
+    background-color: var(--dark-bg);
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    max-width: 920px;
+    margin: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .category-tab {
+    padding: 10px 16px;
+    border: none;
+    background-color: transparent;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    white-space: nowrap;
+    font-size: 16px;
+  }
+  .category-tabs {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+    white-space: nowrap;
+    max-width: 80%;
+    margin: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* For smooth mobile scrolling */
+  }
+
+  .scroll-btn {
+    width: 28px;
+    height: 28px;
+    padding: 6px;
+  }
+
+  .scroll-btn.left {
+    left: 0px;
+    
+  }
+
+  .scroll-btn.right {
+    right: 0px;
+  }
+
+}
+  
+
 
 
 hr{
@@ -2052,7 +2110,6 @@ hr{
   }
 }
 /* whatsapp-icon */
-
 .floating-icons {
   position: fixed;
   bottom: 20px;
@@ -2062,7 +2119,10 @@ hr{
   gap: 10px;
   z-index: 1000;
 }
-
+.floating-icons img{
+  object-fit: cover;
+}
+.maps-icon,
 .whatsapp-icon,
 .instagram-icon {
   width: 50px;
@@ -2076,15 +2136,22 @@ hr{
   transition: transform 0.3s ease-in-out;
 }
 
+.maps-icon img,
 .whatsapp-icon img,
 .instagram-icon img {
   width: 30px;
   height: 30px;
 }
 
+.maps-icon:hover,
 .whatsapp-icon:hover,
 .instagram-icon:hover {
   transform: scale(1.1);
+}
+
+/* Specific colors for each icon */
+.maps-icon {
+  background-color: #ffffff; /* Google Maps blue */
 }
 
 .whatsapp-icon {

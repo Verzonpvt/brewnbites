@@ -99,29 +99,35 @@ const Gallery = () => {
       </main>
 
       {/* =================Whatsapp icon */}
-<section className="whatsapp">
-<div className="floating-icons">
-  
-  <a
-    href="https://www.instagram.com/bb_brewandbites?igsh=NHNhY2pzdHlpdHdi" // Replace with your Instagram link
-    className="instagram-icon"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
-  </a>
-  <a
-    href="https://chat.whatsapp.com/JlOAfSXq7VdInUEkYhLfHo" // Replace with your WhatsApp number
-    className="whatsapp-icon"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
-  </a>
-
-</div>
-
+      <section className="whatsapp">
+  <div className="floating-icons">
+    <a
+      href="https://maps.app.goo.gl/pj9dZsiwn2z4b3vK9" // Replace with your Google Maps link
+      className="maps-icon"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img src="https://img.icons8.com/?size=100&id=DcygmpZqBEd9&format=png&color=000000" alt="Maps" />
+    </a>
+    <a
+      href="https://www.instagram.com/bb_brewandbites?igsh=NHNhY2pzdHlpdHdi"
+      className="instagram-icon"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
+    </a>
+    <a
+      href="https://chat.whatsapp.com/JlOAfSXq7VdInUEkYhLfHo"
+      className="whatsapp-icon"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    </a>
+  </div>
 </section>
+
 
       <Footer />
     </div>
