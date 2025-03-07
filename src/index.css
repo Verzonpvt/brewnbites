@@ -1418,9 +1418,7 @@ hr{
     margin-bottom:100px ;
     gap: 25px;
   }
-  .menu-items{
-    display: none;
-  }
+ 
   .mitem {
     width: 125px; /* Further reduce size */
     height: 125px;

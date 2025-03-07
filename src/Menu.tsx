@@ -10,18 +10,19 @@ function Menu() {
   const [activeCategory, setActiveCategory] = useState('All');
   const scrollRef = useRef(null);
 
-  const categories = [ 'All','Pizza', 'French Fries', 'Burger', 'Coffee/Shakes', 'Mocktails', 'Patties', 'Garlic Bread', 'Sandwich', 'Maggie'];
+  const categories = [ 'All','Pizza', 'French Fries', 'Burger', 'Coffee','Shakes', 'Mocktails', 'Patties', 'Garlic Bread', 'Sandwich', 'Maggie'];
   
     const menuItems = [
-      {  category: 'Pizza', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741255979559-Frame%209%20(1).png" },
-      {  category: 'French Fries', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741255144245-Group%2012.png" },
-      {  category:'Burger', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741255860904-Group%2010.png" },
-      { category: 'Coffee & Shakes', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741254641124-Group%208.png" },
-      { category: 'Mocktails', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741255979559-Frame%209%20(1).png" },
-      {  category: 'Patties', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741255144245-Group%2012.png" },
-      { category:'Garlic Bread', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741255860904-Group%2010.png" },
-      {  category: 'Sandwich', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741256266736-Group%2013.png" },
-      {  category: 'Maggie', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741254641124-Group%208.png" },
+      {  category: 'Pizza', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741358584501-Frame%2018.png" },
+      {  category: 'French Fries', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741358584501-Frame%2019.png" },
+      {  category:'Burger', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741358584500-Frame%2025.png" },
+      { category: 'Coffee', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741358584503-Frame%2014.png" },
+      { category: 'Shakes', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741358584502-Frame%2015.png" },
+      { category: 'Mocktails', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741358584502-Frame%2017.png" },
+      {  category: 'Patties', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741358584500-Frame%2020.png" },
+      { category:'Garlic Bread', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741358584498-Frame%2024.png" },
+      {  category: 'Sandwich', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741358584500-Frame%2021.png" },
+      {  category: 'Maggie', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741358584501-Frame%2016.png" },
     ];
 
 
