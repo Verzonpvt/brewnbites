@@ -1563,7 +1563,11 @@ hr{
   flex-grow: 1;
   max-width: 800px;
   margin: auto;
+  
+  
 }
+
+
 
 .menu-item-image img {
   width: 100%;

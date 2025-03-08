@@ -90,6 +90,7 @@ function Menu() {
     
 
   return (
+    <div>
     <div className="menu-page">
       <Navbar />
 
@@ -194,9 +195,9 @@ function Menu() {
     </a>
   </div>
 </section>
-
-
-      <Footer />
+      
+    </div>
+    <Footer />
     </div>
   );
 }
