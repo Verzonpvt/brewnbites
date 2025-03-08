@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
 import cafelogo from '../assets/cafelogo.png';
 import logo from '../assets/logo.jpg';
+
 const scrollToTop = () => {
   window.scrollTo(0, 0);
 };

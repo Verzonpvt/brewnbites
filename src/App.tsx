@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ExploreScroll from './components/ExploreScroll';  
 import Ratings from './components/Ratings';
+import PopupModal from './components/PopupModal';
 import heroimg from './assets/heroimg.png'; 
 import cafe1 from './assets/cafe/cafe1.jpeg';
 
@@ -12,6 +13,9 @@ function App() {
   return (
     <div className="app">
       <Navbar />
+
+      {/* Popup Modal */}
+      <PopupModal />
 
       {/* Hero Section */}
       <section className="hero" id="home">
@@ -30,7 +34,7 @@ function App() {
         </div>
         
       </section>
-
+    
       {/* Why Choose Section */}
       <section className="why-choose" id="about">
         <div className="container">

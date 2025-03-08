@@ -6,12 +6,16 @@ import { Coffee, Pizza as PizzaIcon, Merge as BurgerIcon, Salad, Coffee as Drink
 import { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
+const scrollToTop = () => {
+  window.scrollTo(0, 0);
+};
+
 function Menu() {
   const [activeCategory, setActiveCategory] = useState('All');
   const scrollRef = useRef(null);
 
   const categories = [ 'All','Pizza', 'French Fries', 'Burger', 'Coffee','Shakes', 'Mocktails', 'Patties', 'Garlic Bread', 'Sandwich', 'Maggie'];
-  
+   
     const menuItems = [
       {  category: 'Pizza', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741358584501-Frame%2018.png" },
       {  category: 'French Fries', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741358584501-Frame%2019.png" },
@@ -30,8 +34,8 @@ function Menu() {
     { id: 1, name: 'Pizza', category1: 'All',image:"https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741351999432-Frame%2026.png" },
     { id: 2, name: 'French Fries', category1: 'All', image:"https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741351999434-Frame%2027.png" },
     { id: 3, name: 'Burger', category1: 'All', image:"https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741351999434-Frame%2028.png" },
-    { id: 4, name: 'Coffee ', category1: 'All',image:"https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741351999434-Frame%2030.png" },
-    { id: 5, name: 'Shake', category1: 'All',image:"https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741351999434-Frame%2029.png" },
+    { id: 4, name: 'Coffee', category1: 'All',image:"https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741351999434-Frame%2030.png" },
+    { id: 5, name: 'Shakes', category1: 'All',image:"https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741351999434-Frame%2029.png" },
     { id:6, name: 'Mocktails', category1: 'All',image:"https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741351999434-Frame%2031.png" },
     { id: 7, name: 'Garlic Bread', category1: 'All',image:"https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741351999435-Frame%2035.png"},
     { id: 8, name: 'Sandwich', category1: 'All',image:"https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741351999435-Frame%2033.png" },
@@ -131,7 +135,7 @@ function Menu() {
           style={{ cursor: "pointer" }} 
         >
           <div className="mitem-image">
-            <img src={item.image} alt={item.name} />
+            <img onClick={scrollToTop} src={item.image} alt={item.name} />
           </div>
         </div>
       ))}
