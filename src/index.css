@@ -178,6 +178,24 @@ body {
   right: 50px;
 }
 
+/* Animation */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+
 /* Responsive design for tablets and smaller devices */
 @media screen and (max-width: 768px) {
   #yp, #iyt {
@@ -963,6 +981,35 @@ body {
 }
 
 /* BentoGallery.css */
+/* Image Hover Animation */
+.relative img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.relative:hover img {
+  transform: scale(1.05);
+}
+
+/* Overlay Fade-in Effect */
+.relative .absolute {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.relative:hover .absolute {
+  opacity: 1;
+}
+
+/* Floating Icons Hover Animation */
+.floating-icons a {
+  transition: transform 0.3s ease-in-out;
+}
+
+.floating-icons a:hover {
+  transform: scale(1.2);
+}
+
+
 
 .bento-grid {
   display: grid;
@@ -1157,6 +1204,79 @@ body {
 }
 
 /* Menu Page Styles */
+
+/* === Fade-in animation for entire page === */
+.menu-page {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* === Slide-in animation for category tabs === */
+.category-tabs button {
+  animation: slideIn 0.8s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(-20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* === Fade-in & scale effect for menu items === */
+.menu-item, .mitem {
+  animation: fadeScale 0.8s ease-in-out;
+}
+
+@keyframes fadeScale {
+  from {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+/* === Hover effects for menu images === */
+.menu-item img, .mitem img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-item img:hover, .mitem img:hover {
+  transform: scale(1.1);
+}
+
+/* === Slide-in effect for WhatsApp icons === */
+.floating-icons {
+  animation: slideUp 1s ease-in-out;
+}
+
+@keyframes slideUp {
+  from {
+      transform: translateY(20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+
 .menu-page {
   min-height: 100vh;
   display: flex;
@@ -1715,6 +1835,51 @@ hr{
 
 
 /* About Page Styles */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+.about-hero-content {
+  opacity: 0; /* Initially hidden */
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Initially hidden */
+.about-story-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Animation triggers when "active" class is added */
+.about-story-section.active {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+
 .about-page {
   min-height: 100vh;
   display: flex;
@@ -1724,7 +1889,7 @@ hr{
 .about-hero {
   position: relative;
   height: 500px;
-  background-image: url('https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741177433534-vecteezy_ai-generated-grill-burger-pizza-salad-lettuce-on-wooden_36801692.jpg');
+  background-image: url('./assets/background1.jpg');
   background-size: cover;
   background-position: center;
   display: flex;

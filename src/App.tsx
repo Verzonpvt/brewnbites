@@ -6,6 +6,11 @@ import Footer from './components/Footer';
 import ExploreScroll from './components/ExploreScroll';  
 import Ratings from './components/Ratings';
 import PopupModal from './components/PopupModal';
+import WhyChoose from './components/WhyChoose';
+import HeritageSection from './components/HeritageSection';
+import Testimonials from './components/Testimonials';
+import Locations from './components/Locations';
+import SocialMedia from './components/SocialMedia';
 // images
 import heroimg from './assets/heroimg.png'; 
 import cafe1 from './assets/cafe/cafe1.jpeg';
@@ -23,6 +28,8 @@ import cafe6 from './assets/cafe/cafe6.jpg';
 import cafe8 from './assets/cafe/cafe8.jpg';
 import cafe9 from './assets/cafe/cafe9.jpg';
 
+
+
 function App() {
   return (
     <div className="app">
@@ -33,197 +40,47 @@ function App() {
 
       {/* Hero Section */}
       <section className="hero" id="home">
-        <div className="container">
-          <div className="hero-content">
-            <div className="hero-text">
-              <img src={heroimg} alt="b&b" />
-            </div>
-            <div  className="hero-para">
-              <p>Brew and Bites is a cozy, 100% vegetarian café serving a variety of flavorful bites <br />and refreshing brews. Our menu features cheesy pizzas, crispy garlic bread, loaded burgers, classic Maggi, <br /> and handcrafted beverages, all made with fresh, high-quality ingredients.</p>
-            </div> 
-          </div>
-          <div className="cta-btn-hero">
-            <Link to="/menu" className="cta-btn">View Menu</Link>
-          </div>
-        </div>
-        
-      </section>
-    
+  <div className="container">
+    <div className="hero-content">
+      <div className="hero-text">
+        <img src={heroimg} alt="b&b" />
+      </div>
+      <div className="hero-para animate-fadeIn">
+        <p>
+          Brew and Bites is a cozy, 100% vegetarian café serving a variety of flavorful bites <br />
+          and refreshing brews. Our menu features cheesy pizzas, crispy garlic bread, loaded burgers, classic Maggi, <br />
+          and handcrafted beverages, all made with fresh, high-quality ingredients.
+        </p>
+      </div>
+    </div>
+    <div className="cta-btn-hero">
+      <Link to="/menu" className="cta-btn">View Menu</Link>
+    </div>
+  </div>
+</section>
+
       {/* Why Choose Section */}
-      <section className="why-choose" id="about">
-        <div className="container">
-          <div className="why-choose-content">
-            <div className="why-choose-image">
-              <img src={cafe1} alt="Restaurant Interior" />
-            </div>
-            <div className="why-choose-text">
-              <h2>Why choose Brew & Bites?</h2>
-              <div className="divider"></div>
-              <p id='big-p' >Located in SIKAR, Brew and Bites is your go-to spot for a relaxed dining experience.</p>
-              <p id='small-p'>Our menu is crafted for food lovers, offering a perfect mix of comfort and flavor—freshly made pizzas, juicy burgers, classic bagels, crispy garlic bread, and a variety of beverages to complement every bite. Whether you're here for a quick snack, a coffee break, or a full meal, we've got you covered with our diverse menu options.</p>
-              <div className="learn-more-btn">
-                <Link to="/about" className="cta-btn">Learn More</Link>
-              </div>     
-            </div>
-            
-          </div>
-        </div>
-      </section>
+      <WhyChoose />
 
       {/* Explore Section */}
-   <ExploreScroll />
+       <ExploreScroll />
 
-
-      {/* Heritage Section */}
-      <section className="heritage">
-        <div className="container">
-          <div className="heritage-content">
-            <div className="heritage-text">
-              <h2>Traditional Heritage, Modern Result</h2>
-              <p>Located in the heart of Sikar, Brew & Bite reflects Rajasthan’s rich heritage with a modern twist. Inspired by traditional hospitality, we now serve crispy pizzas, juicy burgers, and refreshing beverages to delight every palate. Crafted with the finest ingredients, our menu brings you flavors both classic and new. Experience the perfect mix of tradition and taste at <b>Brew & Bite, Sikar!</b> </p>
-            </div>
-            <div className="heritage-image">
-              <img src={food1} alt="Pizza Image" />
-            </div>
-          </div>
-          <div className="heritage-bg"></div>
-        
-        </div>
-      </section>
-
+      {/* Heritage Section */}  
+      <HeritageSection />
+      
       {/* Testimonials Section */}
-      <section className="testimonials">
-        <div className="container">
-          <div className="testimonials-title">
-            <h2>Our happy customers</h2>
-            <div className="customers-divider"></div>
-          </div>
-          <div className="testimonials-grid">
-            <div className="testimonial-card">
-              <div className="testimonial-header">
-                <div className="testimonial-avatar">
-                  <img src={profile3} alt="Alok Shah" />
-                </div>
-                <div className="testimonial-name">
-                  <h3>Himanshu</h3>
-                </div>
-              </div>
-              <div className="testimonial-text">
-                <p>Brew and Bites is a delight for vegetarians! The food is fresh, delicious, and served with great care. Their cheesy pizzas, crispy garlic bread, and refreshing beverages make every visit worthwhile. The cozy ambiance adds to the experience. A must-visit for food lovers!</p>
-              </div>
-            </div>
-            <div className="testimonial-card">
-              <div className="testimonial-header">
-                <div className="testimonial-avatar">
-                  <img src={profile2} alt="Alok Shah" />
-                </div>
-                <div className="testimonial-name">
-                  <h3>Alok</h3>
-                </div>
-              </div>
-              <div className="testimonial-text">
-                <p>I had an amazing experience at Brew and Bites! 🍕🍔 From the delicious pizzas to the perfectly cooked Maggi, every bite was a delight. The ambiance is cozy, and the staff is super friendly. Loved their refreshing beverages and crispy garlic bread! A must-visit spot in Sikar for all vegetarian food lovers. Highly recommended! ⭐⭐⭐⭐⭐</p>
-              </div>
-            </div>
-            <div className="testimonial-card">
-              <div className="testimonial-header">
-                <div className="testimonial-avatar">
-                  <img src={profile1} alt="Alok Shah" />
-                </div>
-                <div className="testimonial-name">
-                  <h3>Tanuja</h3>
-                </div>
-              </div>
-              <div className="testimonial-text">
-                <p>What impressed me most was the cleanliness and hygiene standards they maintain. A great spot for a safe and tasty meal!</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Testimonials />
 
       {/* Ratings Section */}
 
       <Ratings />      
 
        {/* Locations Section */}
-       <section className="locations">
-        <div className="container">
-          <div className="locations-card">
-            <div className="locations-content">
-              <h2>Find our locations</h2>
-              <p> Brew & Bites, Tabela Road, near to Purohit Oil Mill  <br />
-opposite to City Plaza, Subhash Chowkbr <br />
-Sikar, Rajasthan - 332001</p>
-              <button
-  className="locations-btn"
-  onClick={() => window.open("https://maps.app.goo.gl/pj9dZsiwn2z4b3vK9", "_blank")}
->
-  Get Location
-</button>
-            </div>
-            <div className="locations-images">
-              <img src={location} alt="" />
-            </div>
-          </div>
-        </div>
-      </section>  
+      <Locations />
+        
 
       {/* Social Media Section */}
-      <section className="social-media" id="gallery">
-        <div className="container">
-          <div className="social-media-content">
-            <div className="social-media-header">
-              <h2>Follow us</h2>
-              <p>@brewandbites</p>
-              <p>To stay updated with the latest news, promotions, and offerings from the poke restaurant, make sure to follow us on our social media accounts. Don't miss out on any updates!</p>
-              <div className="social-icons">
-                <a href="#" className="social-icon">
-                  <Facebook size={20} color="#ffffff" />
-                </a>
-                <a href="#" className="social-icon">
-                  <Twitter size={20} color="#ffffff" />
-                </a>
-                <a href="#" className="social-icon">
-                  <Instagram size={20} color="#ffffff" />
-                </a>
-                 <a href="#" className="social-icon">
-                  <Youtube size={20} color="#ffffff" />
-                </a>
-              </div>
-            </div>
-            <div className="gallery-grid">
-              <div className="gallery-item">
-                <img src={cafe3} alt="Food" />
-              </div>
-              <div className="gallery-item">
-                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Food" />
-              </div>
-              <div className="gallery-item">
-                <img src={cafe5} alt="Food" />
-              </div>
-              <div className="gallery-item">
-                <img src={food4} alt="Food" />
-              </div>
-              <div className="gallery-item">
-                <img src={cafe9} alt="Food" />
-              </div>
-              <div className="gallery-item">
-                <img src={food3} alt="Food" />
-              </div>
-              <div className="gallery-item">
-                <img src={cafe8} alt="Food" />
-              </div>
-              <div className="gallery-item">
-                <img src={food2} alt="Food" />
-              </div>
-              <div className="gallery-item">
-                <img src={cafe6} alt="Food" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <SocialMedia />
 
       {/* =================Whatsapp icon */}
       <section className="whatsapp">

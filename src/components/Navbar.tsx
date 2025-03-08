@@ -32,7 +32,9 @@ const Navbar = () => {
       <div className="container">
         <nav className="navbar">
           <div className="logo">
-            <img src={cafelogo} alt="Brew & Bites Logo" />
+          <Link to="/">
+            <img onClick={scrollToTop} src={cafelogo} alt="Brew & Bites Logo" />
+           </Link>
           </div>
           <div className="nav-links">
             <Link to="/" className={isActive('/')} onClick={scrollToTop}>Home</Link>
