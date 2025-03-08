@@ -26,7 +26,7 @@ function App() {
               <img src={heroimg} alt="b&b" />
             </div>
             <div  className="hero-para">
-              <p>Brew and Bites is a cozy, 100% vegetarian café serving a variety of flavorful bites and refreshing <br /> brews. Our menu features cheesy pizzas, crispy garlic bread, loaded burgers, classic Maggi, <br /> and handcrafted beverages, all made with fresh, high-quality ingredients.</p>
+              <p>Brew and Bites is a cozy, 100% vegetarian café serving a variety of flavorful bites <br />and refreshing brews. Our menu features cheesy pizzas, crispy garlic bread, loaded burgers, classic Maggi, <br /> and handcrafted beverages, all made with fresh, high-quality ingredients.</p>
             </div> 
           </div>
           <div className="cta-btn-hero">

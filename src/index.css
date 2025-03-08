@@ -153,7 +153,7 @@ body {
 
 .hero-text img {
   width: 80%; /* Make image responsive */
-  max-width: 300px;
+  max-width: 500px;
   z-index: 1;
 }
 
@@ -1438,7 +1438,7 @@ hr{
 
 
 .menu-items {
-  padding: 0px 0 100px;
+  padding: 0px 0 0px;
   background-color: var(--dark-bg);
   flex-grow: 1;
   max-width: 800px;
@@ -1550,7 +1550,7 @@ hr{
 @media (max-width: 480px) {
   .mgrid {
     grid-template-columns: repeat(2, 1fr); /* Single column layout */
-    margin-bottom:100px ;
+    margin-bottom:20px ;
     gap: 25px;
   }
  
