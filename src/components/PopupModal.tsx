@@ -17,20 +17,20 @@ const PopupModal: React.FC = () => {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 z-50 p-4">
-      <div className="relative bg-white p-4 rounded-lg shadow-lg w-full max-w-xs sm:max-w-md md:max-w-lg">
-        {/* Close Button */}
+      <div className="relative bg-white rounded-lg shadow-lg w-full max-w-xs sm:max-w-md md:max-w-lg overflow-hidden">
+        {/* Close Button inside the image */}
         <button
-          className="absolute top-2 right-2 text-gray-700 hover:text-red-500 text-2xl"
+          className="absolute top-2 right-2 bg-black bg-opacity-50 text-white rounded-full w-8 h-8 flex items-center justify-center text-xl"
           onClick={() => setIsOpen(false)}
         >
           ✖
         </button>
 
-        {/* Popup Image */}
+        {/* Popup Image with rounded borders */}
         <img
           src={popup} // Change this to your image URL
           alt="Popup"
-          className="w-full rounded-lg object-cover"
+          className="w-full rounded-lg"
         />
       </div>
     </div>
