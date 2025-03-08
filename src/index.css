@@ -290,11 +290,102 @@ body {
     text-align: left;
     margin-top: 20px;
     margin-bottom: 20px;
+    
+}
+@media screen and (max-width: 768px) {
+  .why-choose-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .why-choose-text {
+    max-width: 100%;
+  }
+
+  .why-choose-text h2 {
+    font-size: 30px;
+  }
+
+  .why-choose-text p {
+    font-size: 16px;
+  }
+
+  .why-choose-image img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .learn-more-btn{
+    margin-inline: auto;
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+  .why-choose {
+    padding: 20px 0;
+  }
+
+  .why-choose-content {
+    padding: 20px;
+  }
+
+  .why-choose-text h2 {
+    font-size: 26px;
+  }
+
+  .why-choose-text p {
+    font-size: 14px;
+  }
+
+  .why-choose-image img {
+    width: 250px;
+    height: 250px;
+  }
+  .learn-more-btn{
+    margin-inline: auto;
+    text-align: center;
+  }
+  
 }
 
 
 
 /* Explore Section */
+.scroll-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+}
+
+.scroll-content {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+.scroll-content img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Duplicating content for a seamless scroll effect */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
 .explore {
   padding: 20px 0;
   background-color: var(--dark-bg);
@@ -311,66 +402,12 @@ body {
   margin-bottom: 10px;
 }
 
-.explore-divider {
-  width: 50px;
-  height: 5px;
-  background-color: var(--primary-color);
-  margin: 0 auto;
-}
-
-.explore-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  margin-bottom: 30px;
-}
-
-.explore-item {
-  position: relative;
-  height: 300px;
-  border-radius: 10px;
-  overflow: hidden;
-  cursor: pointer;
-  margin-bottom: 20px;
-}
-
-.explore-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s;
-
-}
-
-.explore-item:hover img {
-  transform: scale(1.05);
-}
-
-.explore-item-content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-}
-
-.explore-item-content h3 {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.explore-item-content p {
-  font-size: 14px;
-  line-height: 1.5;
-  opacity: 0.9;
-}
 
 .explore-more-btn {
+  
   display: block;
   width: 200px;
-  margin: 0 auto;
+  margin: 20px auto;
   text-align: center;
   background-color: var(--primary-color);
   color: white;
@@ -1051,6 +1088,9 @@ body {
   margin-bottom: 5px;
   text-align: center;
 }
+.footer-contact h5{
+  text-align: center;
+}
 
 #email{
   font-size: 14px;
@@ -1075,6 +1115,13 @@ body {
   margin-top: 30px;
   font-size: 14px;
   opacity: 0.7;
+}
+.verzon img{
+  width: auto;
+  height: 50px;
+  margin: auto;
+  display: block;
+  object-fit: cover;
 }
 
 /* Menu Page Styles */

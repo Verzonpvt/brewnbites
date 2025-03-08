@@ -3,6 +3,10 @@ import { Coffee, Pizza, Merge as Burger, Utensils, Facebook, Twitter, Instagram,
 import { Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ExploreScroll from './components/ExploreScroll';  
+import Ratings from './components/Ratings';
+import heroimg from './assets/heroimg.png'; 
+import cafe1 from './assets/cafe/cafe1.jpeg';
 
 function App() {
   return (
@@ -14,7 +18,7 @@ function App() {
         <div className="container">
           <div className="hero-content">
             <div className="hero-text">
-              <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741273114266-Frame%2012%20(1).png" alt="b&b" />
+              <img src={heroimg} alt="b&b" />
             </div>
             <div  className="hero-para">
               <p>Brew and Bites is a cozy, 100% vegetarian café serving a variety of flavorful bites and refreshing <br /> brews. Our menu features cheesy pizzas, crispy garlic bread, loaded burgers, classic Maggi, <br /> and handcrafted beverages, all made with fresh, high-quality ingredients.</p>
@@ -32,7 +36,7 @@ function App() {
         <div className="container">
           <div className="why-choose-content">
             <div className="why-choose-image">
-              <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741166212784-abouthome.jpg" alt="Restaurant Interior" />
+              <img src={cafe1} alt="Restaurant Interior" />
             </div>
             <div className="why-choose-text">
               <h2>Why choose Brew & Bites?</h2>
@@ -49,46 +53,8 @@ function App() {
       </section>
 
       {/* Explore Section */}
-      <section className="explore" id="menu">
-        <div className="container">
-          <div className="explore-title">
-            <h2>Explore <br />
-            <div className="explore-divider"></div></h2>
-            
-          </div>
-          <div className="explore-grid">
-            <div className="explore-item">
-              <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Pizza" />
-              <div className="explore-item-content">
-                <h3>Pizza</h3>
-                <p>Located in SIKAR, Brew and Bites is your go-to spot for a relaxed dining experience. Our signature pizzas.</p>
-              </div>
-            </div>
-            <div className="explore-item">
-              <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Burger" />
-              <div className="explore-item-content">
-                <h3>Burger</h3>
-                <p>Juicy, flavorful burgers with premium toppings and our special sauce.</p>
-              </div>
-            </div>
-            <div className="explore-item">
-              <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741176237007-pexels-photo-312418.webp" alt="Coffee" />
-              <div className="explore-item-content">
-                <h3>Coffee</h3>
-                <p>Premium coffee blends, expertly brewed to perfection.</p>
-              </div>
-            </div>
-            <div className="explore-item">
-              <img src="https://images.unsplash.com/photo-1562967914-608f82629710?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Cocktails" />
-              <div className="explore-item-content">
-                <h3>Cocktails</h3>
-                <p>Refreshing signature cocktails crafted by our expert mixologists.</p>
-              </div>
-            </div>
-          </div>
-          <Link to="/menu" className="explore-more-btn">Explore more</Link>
-        </div>
-      </section>
+   <ExploreScroll />
+
 
       {/* Heritage Section */}
       <section className="heritage">
@@ -157,7 +123,10 @@ function App() {
           </div>
         </div>
       </section>
-      
+
+      {/* Ratings Section */}
+
+      <Ratings />      
 
        {/* Locations Section */}
        <section className="locations">
