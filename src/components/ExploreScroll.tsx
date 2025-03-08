@@ -1,9 +1,19 @@
 import { useEffect, useRef } from "react";
 import { Link } from 'react-router-dom';
+import explore1 from '../assets/explore/explore1.jpg';
+import explore2 from '../assets/explore/explore2.jpg';
+import explore3 from '../assets/explore/explore3.jpg';
+import explore4 from '../assets/explore/explore4.jpg'; 
+import explore5 from '../assets/explore/explore5.jpg';
+import explore6 from '../assets/explore/explore6.jpg';
+import explore7 from '../assets/explore/explore7.jpg';
+import explore8 from '../assets/explore/explore8.jpg';
+import explore9 from '../assets/explore/explore9.png';
+
 
 const ExploreScroll = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
-  const scrollSpeed = 40; // Adjust speed (lower = faster)
+  const scrollSpeed = 50; // Adjust speed (lower = faster)
 
   useEffect(() => {
     const scrollContent = scrollRef.current;
@@ -41,10 +51,15 @@ const ExploreScroll = () => {
         {/* Infinite Scroll Container */}
         <div className="scroll-container" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           <div className="scroll-content" ref={scrollRef}>
-            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Pizza" />
-            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Burger" />
-            <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741176237007-pexels-photo-312418.webp" alt="Coffee" />
-            <img src="https://images.unsplash.com/photo-1562967914-608f82629710?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Cocktails" />
+            <img src={explore1} alt="Explore 1" />
+            <img src={explore2} alt="Explore 2" />
+            <img src={explore3} alt="Explore 3" />
+            <img src={explore4} alt="Explore 4" />
+            <img src={explore5} alt="Explore 5" />
+            <img src={explore6} alt="Explore 6" />
+            <img src={explore7} alt="Explore 7" />
+            <img src={explore8} alt="Explore 8" />
+            <img src={explore9} alt="Explore 9" />
           </div>
         </div>
 

@@ -9,6 +9,19 @@ import PopupModal from './components/PopupModal';
 // images
 import heroimg from './assets/heroimg.png'; 
 import cafe1 from './assets/cafe/cafe1.jpeg';
+import food1 from './assets/food/food1.png';
+import food2 from './assets/food/food2.jpg';
+import food3 from './assets/food/food3.jpg';
+import food4 from './assets/food/food4.jpg';
+import profile1 from './assets/profile/profile1.jpg';
+import profile2 from './assets/profile/profile2.jpg';
+import profile3 from './assets/profile/profile4.jpg';
+import location from './assets/location.png';
+import cafe3 from './assets/cafe/cafe3.jpg';
+import cafe5 from './assets/cafe/cafe5.jpg';
+import cafe6 from './assets/cafe/cafe6.jpg';
+import cafe8 from './assets/cafe/cafe8.jpg';
+import cafe9 from './assets/cafe/cafe9.jpg';
 
 function App() {
   return (
@@ -70,7 +83,7 @@ function App() {
               <p>Located in the heart of Sikar, Brew & Bite reflects Rajasthan’s rich heritage with a modern twist. Inspired by traditional hospitality, we now serve crispy pizzas, juicy burgers, and refreshing beverages to delight every palate. Crafted with the finest ingredients, our menu brings you flavors both classic and new. Experience the perfect mix of tradition and taste at <b>Brew & Bite, Sikar!</b> </p>
             </div>
             <div className="heritage-image">
-              <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741379538520-404920538_14d9a501-5da7-411a-a965-3bb7d47951fd-removebg-preview.png" alt="Pizza Image" />
+              <img src={food1} alt="Pizza Image" />
             </div>
           </div>
           <div className="heritage-bg"></div>
@@ -89,7 +102,7 @@ function App() {
             <div className="testimonial-card">
               <div className="testimonial-header">
                 <div className="testimonial-avatar">
-                  <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741376140380-1686249143827.jpg" alt="Alok Shah" />
+                  <img src={profile3} alt="Alok Shah" />
                 </div>
                 <div className="testimonial-name">
                   <h3>Himanshu</h3>
@@ -102,7 +115,7 @@ function App() {
             <div className="testimonial-card">
               <div className="testimonial-header">
                 <div className="testimonial-avatar">
-                  <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741376488021-112468319.jpg" alt="Alok Shah" />
+                  <img src={profile2} alt="Alok Shah" />
                 </div>
                 <div className="testimonial-name">
                   <h3>Alok</h3>
@@ -115,7 +128,7 @@ function App() {
             <div className="testimonial-card">
               <div className="testimonial-header">
                 <div className="testimonial-avatar">
-                  <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741376716523-vikas-makwana-upn798iEEYM-unsplash.jpg" alt="Alok Shah" />
+                  <img src={profile1} alt="Alok Shah" />
                 </div>
                 <div className="testimonial-name">
                   <h3>Tanuja</h3>
@@ -150,7 +163,7 @@ Sikar, Rajasthan - 332001</p>
 </button>
             </div>
             <div className="locations-images">
-              <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741187542747-Screenshot%20(123).png" alt="" />
+              <img src={location} alt="" />
             </div>
           </div>
         </div>
@@ -181,31 +194,31 @@ Sikar, Rajasthan - 332001</p>
             </div>
             <div className="gallery-grid">
               <div className="gallery-item">
-                <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741375100623-130.jpg" alt="Food" />
+                <img src={cafe3} alt="Food" />
               </div>
               <div className="gallery-item">
                 <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Food" />
               </div>
               <div className="gallery-item">
-                <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741375100619-123.jpg" alt="Food" />
+                <img src={cafe5} alt="Food" />
               </div>
               <div className="gallery-item">
-                <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741375657071-Veg-Burger.jpg" alt="Food" />
+                <img src={food4} alt="Food" />
               </div>
               <div className="gallery-item">
-                <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741375100622-128.jpg" alt="Food" />
+                <img src={cafe9} alt="Food" />
               </div>
               <div className="gallery-item">
-                <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741375870739-2151846528.jpg" alt="Food" />
+                <img src={food3} alt="Food" />
               </div>
               <div className="gallery-item">
-                <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741375100623-129.jpg" alt="Food" />
+                <img src={cafe8} alt="Food" />
               </div>
               <div className="gallery-item">
-                <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741375975659-1367.jpg" alt="Food" />
+                <img src={food2} alt="Food" />
               </div>
               <div className="gallery-item">
-                <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741375100621-125.jpg" alt="Food" />
+                <img src={cafe6} alt="Food" />
               </div>
             </div>
           </div>

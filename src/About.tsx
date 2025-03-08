@@ -4,6 +4,21 @@ import { Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
+import cafe1 from './assets/cafe/cafe1.jpeg';
+import food1 from './assets/food/food1.png';
+import food2 from './assets/food/food2.jpg';
+import food3 from './assets/food/food3.jpg';
+import food4 from './assets/food/food4.jpg';
+import location from './assets/location.png';
+import cafe3 from './assets/cafe/cafe3.jpg';
+import cafe4 from './assets/cafe/cafe4.jpg';
+import cafe5 from './assets/cafe/cafe5.jpg';
+import cafe6 from './assets/cafe/cafe6.jpg';
+import cafe8 from './assets/cafe/cafe8.jpg';
+import cafe9 from './assets/cafe/cafe9.jpg';
+import mission from './assets/background1.jpg'
+
+
 function About() {
   return (
     <div className="about-page">
@@ -31,7 +46,7 @@ function About() {
               </div>
               <div className="about-story-image">
                 <div className="accent"></div>
-                <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741166212784-abouthome.jpg" alt="Poke Bowl" />
+                <img src={cafe1} alt="Poke Bowl" />
                 <div className="accent"></div>
               </div>
             </div>
@@ -45,7 +60,7 @@ function About() {
                 </div>
               <div className="about-story-image">
                 <div className="accent"></div>
-                <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741375100622-126.jpg" alt="Restaurant Interior" />
+                <img src={cafe4} alt="Restaurant Interior" />
                 <div className="accent"></div>
               </div>
 
@@ -59,7 +74,7 @@ function About() {
                 </div>
               <div className="about-story-image">
                 <div className="accent"></div>
-                <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741177433534-vecteezy_ai-generated-grill-burger-pizza-salad-lettuce-on-wooden_36801692.jpg" alt="Restaurant Atmosphere" />
+                <img src={mission} alt="Restaurant Atmosphere" />
                 
               </div>
             </div>
@@ -84,7 +99,7 @@ function About() {
      </button>
                  </div>
                  <div className="locations-images">
-                   <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741187542747-Screenshot%20(123).png" alt="" />
+                   <img src={location} alt="" />
                  </div>
                </div>
              </div>
@@ -114,34 +129,34 @@ function About() {
                    </div>
                  </div>
                  <div className="gallery-grid">
-                   <div className="gallery-item">
-                     <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741375100623-130.jpg" alt="Food" />
-                   </div>
-                   <div className="gallery-item">
-                     <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Food" />
-                   </div>
-                   <div className="gallery-item">
-                     <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741375100619-123.jpg" alt="Food" />
-                   </div>
-                   <div className="gallery-item">
-                     <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741375657071-Veg-Burger.jpg" alt="Food" />
-                   </div>
-                   <div className="gallery-item">
-                     <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741375100622-128.jpg" alt="Food" />
-                   </div>
-                   <div className="gallery-item">
-                     <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741375870739-2151846528.jpg" alt="Food" />
-                   </div>
-                   <div className="gallery-item">
-                     <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741375100623-129.jpg" alt="Food" />
-                   </div>
-                   <div className="gallery-item">
-                     <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741375975659-1367.jpg" alt="Food" />
-                   </div>
-                   <div className="gallery-item">
-                     <img src="https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741375100621-125.jpg" alt="Food" />
-                   </div>
-                 </div>
+              <div className="gallery-item">
+                <img src={cafe3} alt="Food" />
+              </div>
+              <div className="gallery-item">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Food" />
+              </div>
+              <div className="gallery-item">
+                <img src={cafe5} alt="Food" />
+              </div>
+              <div className="gallery-item">
+                <img src={food4} alt="Food" />
+              </div>
+              <div className="gallery-item">
+                <img src={cafe9} alt="Food" />
+              </div>
+              <div className="gallery-item">
+                <img src={food3} alt="Food" />
+              </div>
+              <div className="gallery-item">
+                <img src={cafe8} alt="Food" />
+              </div>
+              <div className="gallery-item">
+                <img src={food2} alt="Food" />
+              </div>
+              <div className="gallery-item">
+                <img src={cafe6} alt="Food" />
+              </div>
+            </div>
                </div>
              </div>
            </section>

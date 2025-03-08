@@ -6,6 +6,28 @@ import { Coffee, Pizza as PizzaIcon, Merge as BurgerIcon, Salad, Coffee as Drink
 import { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
+import burgerall from './assets/all/burgerall.png'
+import coffeeall from './assets/all/coffeeall.png'
+import friesall from './assets/all/friesall.png'
+import garlicbreadall from './assets/all/garlicbreadall.png'
+import maggieall from './assets/all/maggieall.png'
+import mocktailsall from './assets/all/mocktailsall.png'
+import pattiesall from './assets/all/pattiesall.png'
+import pizzaall from './assets/all/pizzaall.png'
+import shakesall from './assets/all/shakesall.png'
+import sandwichall from './assets/all/sandwichall.png'
+import burgermenu from './assets/menu/burgermenu.png'
+import coffeemenu from './assets/menu/coffeemenu.png'
+import friesmenu from './assets/menu/friesmenu.png'
+import garlicbreadmenu from './assets/menu/garlicbreadmenu.png'
+import maggiemenu from './assets/menu/maggimenu.png'
+import mocktailsmenu from './assets/menu/mocktailsmenu.png'
+import pattiesmenu from './assets/menu/pattiesmenu.png'
+import pizzamenu from './assets/menu/pizzamenu.png'
+import shakesmenu from './assets/menu/shakesmenu.png'
+import sandwichmenu from './assets/menu/sandwichmenu.png'
+
+
 const scrollToTop = () => {
   window.scrollTo(0, 0);
 };
@@ -17,30 +39,30 @@ function Menu() {
   const categories = [ 'All','Pizza', 'French Fries', 'Burger', 'Coffee','Shakes', 'Mocktails', 'Patties', 'Garlic Bread', 'Sandwich', 'Maggie'];
    
     const menuItems = [
-      {  category: 'Pizza', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741358584501-Frame%2018.png" },
-      {  category: 'French Fries', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741358584501-Frame%2019.png" },
-      {  category:'Burger', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741358584500-Frame%2025.png" },
-      { category: 'Coffee', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741358584503-Frame%2014.png" },
-      { category: 'Shakes', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741358584502-Frame%2015.png" },
-      { category: 'Mocktails', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741358584502-Frame%2017.png" },
-      {  category: 'Patties', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741358584500-Frame%2020.png" },
-      { category:'Garlic Bread', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741358584498-Frame%2024.png" },
-      {  category: 'Sandwich', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741358584500-Frame%2021.png" },
-      {  category: 'Maggie', image: "https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741358584501-Frame%2016.png" },
+      {  category: 'Pizza', image: pizzamenu },
+      {  category: 'French Fries', image: friesmenu },
+      {  category:'Burger', image:    burgermenu },
+      { category: 'Coffee', image: coffeemenu },
+      { category: 'Shakes', image: shakesmenu },
+      { category: 'Mocktails', image: mocktailsmenu },
+      {  category: 'Patties', image: pattiesmenu },
+      { category:'Garlic Bread', image: garlicbreadmenu },
+      {  category: 'Sandwich', image: sandwichmenu },
+      {  category: 'Maggie', image: maggiemenu },
     ];
     // ========================
     
   const mitems = [
-    { id: 1, name: 'Pizza', category1: 'All',image:"https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741351999432-Frame%2026.png" },
-    { id: 2, name: 'French Fries', category1: 'All', image:"https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741351999434-Frame%2027.png" },
-    { id: 3, name: 'Burger', category1: 'All', image:"https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741351999434-Frame%2028.png" },
-    { id: 4, name: 'Coffee', category1: 'All',image:"https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741351999434-Frame%2030.png" },
-    { id: 5, name: 'Shakes', category1: 'All',image:"https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741351999434-Frame%2029.png" },
-    { id:6, name: 'Mocktails', category1: 'All',image:"https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741351999434-Frame%2031.png" },
-    { id: 7, name: 'Garlic Bread', category1: 'All',image:"https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741351999435-Frame%2035.png"},
-    { id: 8, name: 'Sandwich', category1: 'All',image:"https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741351999435-Frame%2033.png" },
-    { id: 9, name: 'Maggie', category1: 'All', image:"https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741351999435-Frame%2034.png" },
-    { id: 10, name: 'Patties', category1: 'All', image:"https://zojqhjtepbctgmqurctj.supabase.co/storage/v1/object/public/images/1741351999434-Frame%2032.png"},
+    { id: 1, name: 'Pizza', category1: 'All',image:pizzaall },
+    { id: 2, name: 'French Fries', category1: 'All', image: friesall },
+    { id: 3, name: 'Burger', category1: 'All', image: burgerall },
+    { id: 4, name: 'Coffee', category1: 'All',image:coffeeall },
+    { id: 5, name: 'Shakes', category1: 'All',image: shakesall },
+    { id:6, name: 'Mocktails', category1: 'All',image: mocktailsall },
+    { id: 7, name: 'Garlic Bread', category1: 'All',image: garlicbreadall },
+    { id: 8, name: 'Sandwich', category1: 'All',image: sandwichall },
+    { id: 9, name: 'Maggie', category1: 'All', image: maggieall },
+    { id: 10, name: 'Patties', category1: 'All', image: pattiesall },
   ];
 
   const filteredItems1 = activeCategory === 'All' 
