@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import ExploreScroll from './components/ExploreScroll';  
 import Ratings from './components/Ratings';
 import PopupModal from './components/PopupModal';
+// images
 import heroimg from './assets/heroimg.png'; 
 import cafe1 from './assets/cafe/cafe1.jpeg';
 

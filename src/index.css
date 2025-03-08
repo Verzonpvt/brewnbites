@@ -139,45 +139,76 @@ body {
   background-position: center;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Stack elements vertically on smaller screens */
+  text-align: center; /* Center align content */
+  padding: 20px;
 }
 
-.hero-text{
+.hero-text {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.hero-text img{
-  align-items: center;
-  margin: auto;
+.hero-text img {
+  width: 80%; /* Make image responsive */
+  max-width: 300px;
   z-index: 1;
 }
 
-.hero-text h1{
-  font-size: 40px;
+.hero-text h1 {
+  font-size: 32px; /* Reduce font size for better fit */
+  margin-top: 10px;
+}
+
+#yp, #iyt {
+  position: absolute;
+  font-family: "Dancing Script", cursive !important; /* Force apply */
+  font-size: 24px; /* Adjust font size */
 }
 
 #yp {
-  position: absolute;
-  top: 240px;
-  left: 150px;
-  font-family: "Dancing Script", cursive !important; /* Force apply */
+  top: 200px;
+  left: 50px;
 }
 
 #iyt {
-  position: absolute;
-  top: 240px;
-  right: 180px;
-  font-family: "Dancing Script", cursive !important; /* Force apply */
+  top: 200px;
+  right: 50px;
 }
+
+/* Responsive design for tablets and smaller devices */
 @media screen and (max-width: 768px) {
-  
-#yp{
-  display: none;
- }
- 
- #iyt{
-  display: none;
- }
+  #yp, #iyt {
+    display: none; /* Hide text elements on smaller screens */
   }
+
+  .hero-text h1 {
+    font-size: 28px; /* Adjust for smaller screens */
+  }
+
+}
+
+/* Further adjustments for smartphones */
+@media screen and (max-width: 480px) {
+  .hero  {
+    padding-top: 0px !important; /* Remove top padding */
+    height: 50vh !important;
+    min-height: 70vh !important; /* Reduce height for smaller screens */
+  }
+
+  .hero-text img {
+    width: 70%; /* Adjust image size */
+    max-width: 250px;
+  }
+
+  .hero-text h1 {
+    font-size: 24px; /* Smaller text for phones */
+  }
+
+}
+
   
 
 .hero-para{

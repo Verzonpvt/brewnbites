@@ -3,16 +3,30 @@ import { Link } from 'react-router-dom';
 
 const ExploreScroll = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
-  const scrollToTop = () => {
-    window.scrollTo(0, 0);
-  };
+  const scrollSpeed = 40; // Adjust speed (lower = faster)
+
   useEffect(() => {
     const scrollContent = scrollRef.current;
     if (scrollContent) {
       const duplicateContent = scrollContent.innerHTML;
       scrollContent.innerHTML += duplicateContent; // Duplicate images for seamless scrolling
+      
+      // Apply CSS animation
+      scrollContent.style.setProperty('--scroll-speed', `${scrollSpeed}s`);
     }
-  }, []);
+  }, [scrollSpeed]);
+
+  const handleMouseEnter = () => {
+    if (scrollRef.current) {
+      scrollRef.current.style.animationPlayState = 'paused';
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (scrollRef.current) {
+      scrollRef.current.style.animationPlayState = 'running';
+    }
+  };
 
   return (
     <section className="explore" id="menu">
@@ -25,7 +39,7 @@ const ExploreScroll = () => {
         </div>
 
         {/* Infinite Scroll Container */}
-        <div className="scroll-container">
+        <div className="scroll-container" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           <div className="scroll-content" ref={scrollRef}>
             <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Pizza" />
             <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Burger" />
@@ -34,8 +48,9 @@ const ExploreScroll = () => {
           </div>
         </div>
 
-            <Link to="/menu" onClick={scrollToTop}  className="explore-more-btn">Explore More</Link>
-          
+        <Link to="/menu" onClick={() => window.scrollTo(0, 0)} className="explore-more-btn">
+          Explore More
+        </Link>
       </div>
     </section>
   );
