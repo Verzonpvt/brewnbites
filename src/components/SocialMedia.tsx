@@ -97,6 +97,7 @@ const SocialMedia = () => {
             <div className="gallery-item">
               <img src={cafe6} alt="Food" />
             </div>
+            
           </div>
         </div>
       </div>

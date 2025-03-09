@@ -210,6 +210,7 @@ body {
 
 /* Further adjustments for smartphones */
 @media screen and (max-width: 480px) {
+  
   .hero  {
     padding-top: 0px !important; /* Remove top padding */
     height: 50vh !important;
@@ -957,12 +958,7 @@ body {
     height: auto;
     gap: 10px;
   }
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    height: auto;
-    gap: 10px;
-  }
+ 
  
 
   .gallery-item {
@@ -2303,9 +2299,11 @@ hr{
     height: 100px;
     min-height: 100px;
   }
+
 }
 
 @media (max-width: 576px) {
+
   .gallery-hero h1 {
     font-size: 36px;
   }

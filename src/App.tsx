@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Coffee, Pizza, Merge as Burger, Utensils, Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -31,12 +31,20 @@ import cafe9 from './assets/cafe/cafe9.jpg';
 
 
 function App() {
+
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    // Show popup on page load if an hour has passed
+    setShowPopup(true);
+  }, []);
+
   return (
     <div className="app">
       <Navbar />
 
       {/* Popup Modal */}
-      <PopupModal />
+      <PopupModal shouldShow={showPopup} />
 
       {/* Hero Section */}
       <section className="hero" id="home">
