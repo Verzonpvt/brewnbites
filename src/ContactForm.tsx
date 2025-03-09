@@ -44,7 +44,7 @@ export default function Contact() {
     <div 
       className="min-h-screen bg-black text-white relative flex items-center"
       style={{
-        backgroundImage: `url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80')`,
+        backgroundImage: `url('src/assets/backgroundhome.png')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
