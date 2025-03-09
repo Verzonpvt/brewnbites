@@ -6,6 +6,7 @@ import Menu from './Menu.tsx';
 import Gallery from './Gallery.tsx';
 import About from './About.tsx';
 import './index.css';
+import ContactForm from './ContactForm.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -15,6 +16,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/menu" element={<Menu />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<ContactForm />}/>
       </Routes>
     </Router>
   </StrictMode>

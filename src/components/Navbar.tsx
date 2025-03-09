@@ -42,7 +42,7 @@ const Navbar = () => {
             <Link to="/gallery" className={isActive('/gallery')} onClick={scrollToTop}>Gallery</Link>
             <Link to="/about" className={isActive('/about')} onClick={scrollToTop}>About</Link>
           </div>
-          <button className="contact-btn">Contact Us</button>
+          <Link to="/contact" className="contact-btn">Contact Us</Link>
           <button className="mobile-menu-btn" onClick={toggleMobileMenu} aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}>
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
