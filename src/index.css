@@ -1157,6 +1157,7 @@ body {
 .footer-links {
   gap: 20px;
   padding: 10px;
+  width: 208px;
   
 }
 
