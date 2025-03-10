@@ -18,7 +18,7 @@ export default function Contact() {
     setSubmitStatus('idle');
 
     try {
-      const response = await fetch('https://formbold.com/s/9XKk5', {
+      const response = await fetch('https://formbold.com/s/6vGYK', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
