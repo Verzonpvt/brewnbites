@@ -55,7 +55,7 @@ const Navbar = () => {
         <Link to="/menu" className={isActive('/menu')} onClick={closeMobileMenu}>Menu</Link>
         <Link to="/gallery" className={isActive('/gallery')} onClick={closeMobileMenu}>Gallery</Link>
         <Link to="/about" className={isActive('/about')} onClick={closeMobileMenu}>About</Link>
-        <Link to="/contact" className={isActive('/contact')} onclick={closeMobileMenu} >Contact Us</Link>
+        <Link to="/contact" className={isActive('/contact')} onClick={() => {scrollToTop; closeMobileMenu;}} >Contact Us</Link>
       </div>
     </header>
   );
