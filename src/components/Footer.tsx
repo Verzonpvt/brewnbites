@@ -31,20 +31,22 @@ const Footer = () => {
             <Link to="/menu" onClick={scrollToTop}>Menu</Link><br />
             <Link to="/gallery" onClick={scrollToTop}>Gallery</Link><br />
             <Link to="/about" onClick={scrollToTop}>About Us</Link><br />
+            <Link to="/contact" onClick={scrollToTop}>Contact Us</Link>
           </div>
           <div className="footer-contact">
             <p>Brew & Bites, Tabela Road, near to Purohit Oil Mill<br /> opposite to City Plaza, Subhash Chowk <br />Sikar, Rajasthan - 332001</p><br />
-            <p id='email'>info@brewandbites.com</p>
+           
             <h5>Powered By <br /></h5>
             <div className="verzon">
               <img src={logo} alt="verzon" />
             </div>
           </div>
           <div className="footer-social">
-            <a href="#"><Facebook size={16} /></a>
-            <a href="#"><Twitter size={16} /></a>
-            <a href="#"><Instagram size={16} /></a>
-            <a href="#"><Youtube size={16} /></a>
+            <div className="contact-footer">
+            <p id='email'><b>brewandbitescafee@gmail.com</b></p>
+            <p id="email">+91 0987654321</p>
+            </div>
+          
           </div>
         </div>
         <div className="footer-copyright">

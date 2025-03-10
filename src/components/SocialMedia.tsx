@@ -4,7 +4,7 @@ import { Facebook, Twitter, Instagram, Youtube } from "lucide-react";
 import food2 from '../assets/food/food2.jpg';
 import food3 from '../assets/food/food3.jpg';
 import food4 from '../assets/food/food4.jpg';
-
+import cafe2 from '../assets/cafe/cafe2.jpeg';
 import cafe3 from '../assets/cafe/cafe3.jpg';
 import cafe5 from '../assets/cafe/cafe5.jpg';
 import cafe6 from '../assets/cafe/cafe6.jpg';
@@ -50,10 +50,7 @@ const SocialMedia = () => {
               <a href="#" className="social-icon">
                 <Facebook size={20} color="#ffffff" />
               </a>
-              <a href="#" className="social-icon">
-                <Twitter size={20} color="#ffffff" />
-              </a>
-              <a href="#" className="social-icon">
+              <a href="https://www.instagram.com/bb_brewandbites?igsh=NHNhY2pzdHlpdHdi" className="social-icon">
                 <Instagram size={20} color="#ffffff" />
               </a>
               <a href="#" className="social-icon">
@@ -96,6 +93,9 @@ const SocialMedia = () => {
             </div>
             <div className="gallery-item">
               <img src={cafe6} alt="Food" />
+            </div>
+            <div className="gallery-item cafe-2">
+              <img src={cafe2} alt="Food" />
             </div>
             
           </div>

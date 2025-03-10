@@ -562,6 +562,8 @@ body {
 }
 
 @media (max-width: 1024px) {
+
+
   .heritage-content {
     flex-direction: column;
     align-items: center;
@@ -828,6 +830,10 @@ body {
   background:linear-gradient(rgba(0, 0, 0, 0.748),rgba(0, 0, 0, 0.712)) , url('assets/background.jpg');
 }
 
+.cafe-2{
+  display: none;
+}
+
 .social-media-content {
   max-width: 1300px;
   margin: 0 auto;
@@ -952,6 +958,8 @@ body {
 
 @media screen and (max-width: 768px) {
   
+
+
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -1068,11 +1076,18 @@ body {
     grid-column: span 1;
     grid-row: span 1;
   }
+
+  .cafe-2{
+    display: contents;
+  }
 }
 
 @media (max-width: 480px) {
   .bento-grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .cafe-2{
+    display: contents;
   }
 }
 
@@ -1170,8 +1185,8 @@ body {
 #email{
   font-size: 14px;
   margin-bottom: 5px;
-  text-align: center;
-  color: rgb(181, 177, 177);
+  text-align: right;
+  color: rgb(255, 255, 255);
 }
 
 .footer-social {
@@ -1429,6 +1444,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  #email{
+    text-align: center;
+  }
   .menu-categories {
     position: relative;
     padding: 15px 0;
@@ -1482,6 +1500,10 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+  #email{
+    text-align: center;
+  }
+
   .menu-categories {
     position: relative;
     padding: 15px 0;

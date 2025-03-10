@@ -55,7 +55,7 @@ const Navbar = () => {
         <Link to="/menu" className={isActive('/menu')} onClick={closeMobileMenu}>Menu</Link>
         <Link to="/gallery" className={isActive('/gallery')} onClick={closeMobileMenu}>Gallery</Link>
         <Link to="/about" className={isActive('/about')} onClick={closeMobileMenu}>About</Link>
-        <button className="contact-btn" style={{ marginTop: '20px' }}>Contact Us</button>
+        <Link to="/contact" className={isActive('/contact')} >Contact Us</Link>
       </div>
     </header>
   );
