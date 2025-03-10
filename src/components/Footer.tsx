@@ -44,7 +44,7 @@ const Footer = () => {
           <div className="footer-social">
             <div className="contact-footer">
             <p id='email'><b>brewandbitescafee@gmail.com</b></p>
-            <p id="email">+91 0987654321</p>
+            <p id="email">+91 15723-57676</p>
             </div>
           
           </div>
