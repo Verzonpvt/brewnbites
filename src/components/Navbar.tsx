@@ -42,7 +42,7 @@ const Navbar = () => {
             <Link to="/gallery" className={isActive('/gallery')} onClick={scrollToTop}>Gallery</Link>
             <Link to="/about" className={isActive('/about')} onClick={scrollToTop}>About</Link>
           </div>
-          <Link to="/contact" className="contact-btn" onClick={scrollToTop}>Contact Us</Link>
+          <Link to="/contact" className="contact-btn" onClick={scrollToTop} >Contact Us</Link>
           <button className="mobile-menu-btn" onClick={toggleMobileMenu} aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}>
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -55,7 +55,7 @@ const Navbar = () => {
         <Link to="/menu" className={isActive('/menu')} onClick={closeMobileMenu}>Menu</Link>
         <Link to="/gallery" className={isActive('/gallery')} onClick={closeMobileMenu}>Gallery</Link>
         <Link to="/about" className={isActive('/about')} onClick={closeMobileMenu}>About</Link>
-        <Link to="/contact" className={isActive('/contact')} onClick={() => {scrollToTop; closeMobileMenu;}} >Contact Us</Link>
+        <Link to="/contact" className={isActive('/contact')} onClick={closeMobileMenu} >Contact Us</Link>
       </div>
     </header>
   );
